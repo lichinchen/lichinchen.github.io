@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=PT+Sans&display=swap');
+
+header,
+footer {
+  background-color: #4C5760;
+  color: white;
+  text-align: center;
+ 
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.5;
+  color:black;
+}
+
+
+main,
+footer {
+  font-family: 'PT Sans';
+}
+
+
+
+h1 {
+  font-family: 'Acme';
+  font-size: 2em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1em;
+  margin:0 20px;
+}
+
+h3 {
+  font-size: .9em;
+  margin: 5px 0;
+  color: #4C5760;
+}
+
+p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #f5bb00;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+
+section {
+  background-color: #93A8AC;
+  margin: 0 0 20px;
+  padding: 0 5px 10px;
+  border: 3px solid #4c5760;
+  border-radius: 10px;
+}
+
+section h2 {
+  background-color: #4c5760;
+  color: white;
+  margin: 0 -5px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+
+
+section img {
+  width: 100%;
+  box-shadow: -10px 10px 30px 0 rgba(20, 27, 60, 0.6);
+  border-radius: 6px 6px 6px 6px;
+  margin-top:-15px;
+}
+
+section a {
+  color: #4C5760;
+  
+}
+
+section h2 {
+  padding: 5px;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: -5px;
+  padding: 10px;
+}
+footer p:last-child {
+margin-bottom: 0;
+}
