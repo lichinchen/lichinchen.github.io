@@ -78,7 +78,7 @@ nav{
     border-radius:10px;
 }
 
-
+.responsive-menu li {display:block;}
 
 .contentbox{
     display:block;
