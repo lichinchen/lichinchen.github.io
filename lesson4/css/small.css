@@ -38,9 +38,9 @@ h2{
 .motto{
     font-family:"Open Sans";
     font-style: italic;
-    font-size: 8px;
+    font-size: 9px;
     color:white;
-    margin-left:5px;
+    margin-left:10px;
 }
 
 
@@ -98,6 +98,7 @@ footer{
     font-family:"Open Sans";
     text-align:center;
     color:#ACDDE7;
+    
 }
 
 #currentday{color:white;}
