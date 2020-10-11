@@ -11,7 +11,7 @@ padding:10px;
 header, footer {
     background-color:#004164;
     border-radius: 10px 10px 10px 10px;
-    color:#e8ffb7;
+    color:#ffffff;
     text-align: center;
     padding:1em;
 }
@@ -20,7 +20,7 @@ header {font-family:"Secular one";}
 main, footer {font-family:"Open Sans";}
  
 footer a {
-    color: #deba6f;
+    color: #e8ffb7;
  }
 
  header, main, footer, nav {
@@ -40,15 +40,15 @@ nav ul li a {display:block;
 color:#e8ffb7;
 text-align:center;
 padding:1em;
-
 font-family: "Open Sans";}
 
 nav a:hover {background-color:#e8ffb7;
 color:#004164;}
 
-.active{color:#deba6f;}
+.active{background-color:#80C99B;
+color:#004164;}
 
-h3 {color: #e8ffb7;
+h3 {color: #ffffff;
 background-color:#004164;
 padding:0.5em;
 }
@@ -56,24 +56,27 @@ p{font-family:"Open Sans";}
 h1{font-family:"Secular one";}
 .p1{color:#004164;}
 .p2{color:#004164;}
-.p3{color:#1c9e73;}
+.p3{color:#009237;}
 
 li{color:#004164;
 font-family:"Open Sans";}
 
 .colors{width:100%;
-min-width: 35%;
+min-width: 15%;
 margin: auto;
 text-align: center;}
 
-.colors th {background-color: #999;}
-.colors  td{width:20%;
+
+.colors  td{width:15%;
 height:25em;}
 
-.primary{background-color:#ACDDE7;}
-.secondary{background-color:#004164;}
-.accent1{background-color:#e8ffb7;}
-.accent2{background-color:#deba6f;}
+.one{background-color:#E8FFB7;}
+.two{background-color:#80C99B;}
+.three{background-color:#009237;}
+.four{background-color:#FFFFFF;}
+.five{background-color:#ACDDE7;}
+.six{background-color:#004E64;}
+
 
 @media only screen and (min-width:37.5em){
     nav ul {display:flex;}
