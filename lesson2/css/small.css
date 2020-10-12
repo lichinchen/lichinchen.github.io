@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=PT+Sans&display=swap');
 
-header,
-footer {
+header {
   background-color: #009fb7;
   color: white;
+  text-align: center;
+  padding:5px;
+}
+footer{
+  background-color: #009fb7;
+  color:black;
   text-align: center;
   padding:5px;
 }
@@ -33,7 +38,7 @@ h3 {
 }
 
 footer a {
-  color: #fbff12;
+  color:yellow;
 }
 
 main {
