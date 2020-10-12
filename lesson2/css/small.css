@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lato&display=swap');
 
 header {
   background-color: #009fb7;
@@ -15,7 +15,7 @@ footer{
 
 main,
 footer {
-  font-family: 'PT Sans';
+  font-family: 'Lato';
 }
 
 h1 {
