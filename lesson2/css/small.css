@@ -2,9 +2,10 @@
 
 header,
 footer {
-  background-color: #4C5760;
+  background-color: #009fb7;
   color: white;
   text-align: center;
+  padding:5px;
 }
 
 main,
@@ -27,12 +28,12 @@ h2 {
 
 h3 {
   font-size: 1em; 
-  color: #4C5760;
+  color: #1e555c;
   padding:10px;
 }
 
 footer a {
-  color: #f5bb00;
+  color: #fbff12;
 }
 
 main {
@@ -44,14 +45,14 @@ main {
 }
 
 section {
-  background-color: #93A8AC;
+  background-color:#d8d8d8;
   margin: 0 0 20px; 
-  padding:10px;
+  padding:10px; 
  
 }
 
 section h2 {
-  background-color: #4c5760;
+  background-color: #009fb7;
   color: white;
   text-align:center;
 }
@@ -62,10 +63,11 @@ section img {
 }
 
 section a {
-  color: #4C5760; 
+  color: #1e555c; 
   margin-top:10px; 
 }
-section p {padding:10px;}
+section p {padding:10px;
+color: #1e555c;}
 
 header {
   margin-bottom: 10px;
