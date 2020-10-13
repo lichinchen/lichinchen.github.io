@@ -1,0 +1,34 @@
+
+@media only screen and (min-width: 32.5em) {
+    header img {
+		width: 35%;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+	}
+
+	.motto {
+		font-size: 11px;
+		margin-left: 13px;
+	}
+    
+	.navigation {
+		display: flex;
+    }
+    
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+    }
+    
+	.navigation a {
+		text-align: center;
+    }
+    
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+
