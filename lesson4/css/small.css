@@ -1,20 +1,28 @@
-header, footer{
+header{
     background-color:#004e64;
     display:flex;
     align-items:center;
     padding:10px;
+   
+}
+footer{
+    background-color:#004e64;
+    display:flex;
+    text-align:center;
+    padding:10px;
 }
 
-header, nav, main, footer{
+header, main, footer{
     max-width:767px;
-    margin:0px auto;
-    border-radius:5px;
+    margin: auto;
 }
+
 
 header img{
     width:60px;
-    height:auto;
+    height:auto; 
    
+    justify-content:center; 
 }
 
 h1{
@@ -42,12 +50,19 @@ h2{
     color:white;
     margin-left:10px;
 }
-
+nav ul{
+    list-style-type:none;
+    padding:0;
+    margin:0 auto;
+}
+nav{
+    max-width:767px;
+    margin: auto;
+     }
 
 nav{
-    margin:0 auto;
     max-width:760px;
-    background-color:#004e64;   
+    background-color:#ACDDE7;   
 }
 
 .navigation{
@@ -58,10 +73,10 @@ nav{
 .navigation li{
     display:none;
 }
-
-.navigation li:first-child{
-    display:block;
+.navigation li:first-child {
+    display: block;
 }
+
 
 .navigation a{
     display:block;
@@ -69,13 +84,12 @@ nav{
     text-align:center;
     text-decoration:none;
     font-family:"Open Sans";
-    color:white;
+    color:#004e64;
 }
 
 .navigation a:hover{
-    color:#004e64;
-    background-color:#ACDDE7;
-    border-radius:10px;
+    color:white;
+    background-color:#004e64;
 }
 
 .responsive-menu li {display:block;}
@@ -102,7 +116,3 @@ footer{
 }
 
 #currentday{color:white;}
-.active{
-    background-color:#80C99B;
-}
-
