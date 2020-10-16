@@ -40,13 +40,14 @@ nav ul li a {display:block;
 color:#e8ffb7;
 text-align:center;
 padding:1em;
+
 font-family: "Open Sans";}
 
 nav a:hover {background-color:#e8ffb7;
 color:#004164;}
 
-.active{background-color:#e8ffb7;
-color:#004164;}
+.active{background-color:#009237;
+color:white;}
 
 h2 {color: #ffffff;
 background-color:#004164;
@@ -67,7 +68,7 @@ margin: auto;
 text-align: center;}
 
 
-.colors  td{width:15%;
+.colors  th{width:15%;
 height:25em;}
 
 
