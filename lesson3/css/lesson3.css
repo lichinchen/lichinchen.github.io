@@ -45,7 +45,7 @@ font-family: "Open Sans";}
 nav a:hover {background-color:#e8ffb7;
 color:#004164;}
 
-.active{background-color:#80C99B;
+.active{background-color:#e8ffb7;
 color:#004164;}
 
 h2 {color: #ffffff;
@@ -70,12 +70,12 @@ text-align: center;}
 .colors  td{width:15%;
 height:25em;}
 
+
 .one{background-color:#E8FFB7;}
-.two{background-color:#80C99B;}
-.three{background-color:#009237;}
-.four{background-color:#FFFFFF;}
-.five{background-color:#ACDDE7;}
-.six{background-color:#004E64;
+.two{background-color:#009237;}
+.three{background-color:#FFFFFF;}
+.four{background-color:#ACDDE7;}
+.five{background-color:#004E64;
 color:white;}
 
 
