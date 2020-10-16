@@ -75,7 +75,8 @@ height:25em;}
 .three{background-color:#009237;}
 .four{background-color:#FFFFFF;}
 .five{background-color:#ACDDE7;}
-.six{background-color:#004E64;}
+.six{background-color:#004E64;
+color:white;}
 
 
 @media only screen and (min-width:37.5em){
