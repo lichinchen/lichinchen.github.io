@@ -14,20 +14,24 @@
   
 </head>
 <body>
+    <div class="top">
+        <p id="top-text">Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
+    </div>
     <header>
-        <picture>
         <img src="images/gardenweather.png" alt="Weather Logo">
-        </picture>
         <section class="gardenhead">
         <h1>Gardener Weather Site</h1>
-        <div class="motto">Weather got me like we need to plant more trees.</div>
+        <p class="motto">Weather got me like we need to plant more trees.</p>
         </section>
+        <span>
+            <button class="responsive-menu">&#9776;</button>
+        </span>  
     </header>
     <nav>
         <ul class="navigation">
-            <li><a class="responsive-menu" href ="#menu">&#9776; Menu</a></li>
-            <li><a href="../lesson1/index.html" >Home</a></li>
-            <li class="active"><a href="preston-4.html"> Preston </a></li>
+            <li><a href="../lesson1/index.html">Home</a></li>
+            <li><a href="../lesson1/index.html">Home</a></li>
+            <li><a href="preston-5.html"> Preston </a></li>
             <li><a href="#"> Soda Springs</a></li>
             <li><a href="#"> Fish Haven</a></li>
             <li><a href="#"> Storm Center</a></li>
@@ -35,16 +39,119 @@
         </ul>
     </nav>
     <main>
-        <h2>Preston Idaho</h2>
-        <div class="contentbox">Hero image / weather summary</div>
-        <div class="contentbox">5 Day Forecast</div>
-        <div class="contentbox">Article</div>
-        <div class="contentbox">Contact information</div>
+        <div class="preston_container">
+            <h2 class="city">Preston, Idaho</h2>
+        </div>
+        <div class="image_container">
+            <img src="images/greenfield.jpg" alt= "greenfield image">
+            <section class="summary">
+                <h3 class="summary1">Weather Summary</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Sunrise:</th>
+                            <td>8:00 am</td>
+                        </tr>
+                        <tr>
+                            <th>Sunset:</th>
+                            <td>7:05pm</td>
+                        </tr>
+                        <tr>
+                            <th>Hightest:</th>
+                            <td>60 &#176 F</td>
+                        </tr>
+                        <tr>
+                            <th>Lowest:</th>
+                            <td>36 &#176 F</td>
+                        </tr>
+                        <tr>
+                            <th>Humidity:</th>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <th>Wind:</th>
+                            <td>SW 2 MPH</td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <h2 class="forecast">Five Day Forecast</h2>
+        <div class="forecast_container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Mon.</th>
+                    <th>Tue.</th>
+                    <th>Wed.</th>
+                    <th>Thu.</th>
+                    <th>Fri.</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="rain" src="images/raining.jpg" alt="raining image">
+                        <br>60  &#176 F
+                    </td>
+                    <td>
+                        <img class="sun" src="images/sunny.jpg" alt="sunny image">
+                        <br>65  &#176 F
+                    </td>
+                    <td>
+                        <img class="rain" src="images/raining.jpg" alt="raining image">
+                        <br>63  &#176 F
+                    </td>
+                    <td>
+                        <img class="cloudy" src="images/cloudy.jpg" alt="cloudy image">
+                        <br>51  &#176 F
+                    </td>
+                    <td>
+                        <img class="sun" src="images/sunny.jpg" alt="sunny image">
+                        <br>58  &#176 F
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+
+        <div class="article_container">
+            <div class="article1">
+                <section class="article2">
+                    <h3 class="article3">Article Title</h3>
+                    <p class="article4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis sed temporibus
+                        exercitationem voluptas expedita sunt eius ratione, sint, iure quaerat doloribus quo et sapiente.
+                        Maiores cumque ipsam sint dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                        placeat beatae assumenda maiores porro iste nam quas animi maxime repellat reprehenderit iusto odit,
+                        voluptatibus laboriosam quaerat ipsum modi vitae? Ex. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Labore in dignissimos ullam mollitia, molestiae, quas ab dolores consequatur similique
+                        rem explicabo, rerum veniam vero perferendis! Corporis deleniti fugiat rerum sapiente!</p>
+                   
+                </section>
+                <img class="article_img" src="images/greenwheat.jpg" alt= "wheat image">
+            </div>
+
+        </div>
     </main>
     <footer>
-        <p>&copy; The Weather Site | Attributions | Li Chin Chen</p>
+        <div class="footer_container">
+            <div class="contact1">
+                <section class="contact2">
+                    <h3>Contact Information</h3>
+                    <p>333 Indigo St. Preston, ID</p>
+                    <p>333preston@email.com</p>
+                    <p>(333) 333-33333</p>
+                </section>
+                <img class="contact_img" src="images/map.png" alt="map image">
+            </div>
+        </div>
+        <div class="footer_bottom">
+        <p>&copy; Gardener Weather Site | Attributions | Li Chin Chen</p>
         <div><span id="currentday"></span></div>
-        
+        </div>
     </footer>
     <script src="js/currentday.js"></script>
 </body>
