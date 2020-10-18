@@ -14,24 +14,23 @@
   
 </head>
 <body>
-    <div class="top">
-        <p id="top-text">Saturday is Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
+    <div>
+        <p class="top-text">Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
     </div>
     <header>
-        <img src="images/gardenweather.png" alt="Weather Logo">
+        <img class="logo" src="images/gardenweather.png" alt="Weather Logo">
         <section class="gardenhead">
         <h1>Gardener Weather Site</h1>
         <p class="motto">Weather got me like we need to plant more trees.</p>
-        </section>
-        <span>
-            <button class="responsive-menu">&#9776;</button>
-        </span>  
+        </section> 
+       
     </header>
     <nav>
+        
         <ul class="navigation">
+            <li><a class="responsive-menu">&#9776; Menu</a></li>
             <li><a href="../lesson1/index.html">Home</a></li>
-            <li><a href="../lesson1/index.html">Home</a></li>
-            <li><a href="preston-5.html"> Preston </a></li>
+            <li class="active"><a href="preston-5.html"> Preston </a></li>
             <li><a href="#"> Soda Springs</a></li>
             <li><a href="#"> Fish Haven</a></li>
             <li><a href="#"> Storm Center</a></li>
@@ -45,35 +44,13 @@
         <div class="image_container">
             <img src="images/greenfield.jpg" alt= "greenfield image">
             <section class="summary">
-                <h3 class="summary1">Weather Summary</h3>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Sunrise:</th>
-                            <td>8:00 am</td>
-                        </tr>
-                        <tr>
-                            <th>Sunset:</th>
-                            <td>7:05pm</td>
-                        </tr>
-                        <tr>
-                            <th>Hightest:</th>
-                            <td>60 &#176 F</td>
-                        </tr>
-                        <tr>
-                            <th>Lowest:</th>
-                            <td>36 &#176 F</td>
-                        </tr>
-                        <tr>
-                            <th>Humidity:</th>
-                            <td>50%</td>
-                        </tr>
-                        <tr>
-                            <th>Wind:</th>
-                            <td>SW 2 MPH</td>
-                        </tr> 
-                    </tbody>
-                </table>
+                <h3>Weather Summary</h3>
+                    <p>Currently: <span id="current">Sunny</span></p>
+                    <p>High: <span id="high">76 &#176F</span></p>
+                    <p>Wind Chill: <span id="windChill">0 F</span></p>
+                    <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+                    <p>Humidity: <span id="humidity">69%</span></p>
+                </section>
             </section>
         </div>
         <h2 class="forecast">Five Day Forecast</h2>
@@ -154,6 +131,7 @@
         </div>
     </footer>
     <script src="js/currentday.js"></script>
+    <script src="js/top.js"></script>
 </body>
 </html>
 

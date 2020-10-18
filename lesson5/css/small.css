@@ -1,32 +1,40 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 body {
     color:#004e64;
     background-color:white;
     font-family: "Open Sans"; 
     max-width:960px; 
     margin:0 auto;
-}
-.top{
-    padding:1em;
-    background-color:#80c99b;
-    color:black;   
+    font-size:16px;
+    line-height: 1.25;
+    padding: 0;
+    float: none;
 }
 
-#top-text {
+
+.top-text {
+    display:none;
     text-align:center;
     max-width:960px;
     padding:5px;
     margin:0 auto;
+    padding:1em;
+    background-color:#E8FFB7;
+    color:black;   
 }
-
 
 header{
     background-color:#004e64;
     display:flex;
     align-items:center;
     padding:10px;
-    justify-content:center;
-   
+    justify-content:center;   
 }
+
+
 .gardenhead{
     display:flex;
     flex-direction:column;
@@ -38,12 +46,12 @@ header, main, footer{
 }
 
 
-header img{
+.logo{
     width:50px;
     height:auto;    
 }
 
-
+.responsive-menu li {display:block;}
 
 .image_container{
     position:relative;
@@ -54,31 +62,23 @@ header img{
     width: 100%;
     margin-bottom: 1em;
 }
-
-.summary{
-    top:10px;
-    left:10px;
-    box-shadow: 0 0 30px black;
-    background:#80c99b;
-    padding:10px;
-    opacity: 0.8;
-    border-radius: 5px;
+.summary {
+    background: #E8FFB7;
+    border: none;
+    padding: .75rem;
     text-align:center;
+
 }
 
-.summary1{
-    color:#004e64;
-    font-family:"Open Sans";
-    text-align:center;
-    border-bottom: 1px solid black;
-    padding:5px;
+.summary h3 {
+    margin: auto;
+    text-decoration: underline;
 }
-.summary1 th{text-align:right;}
-.summary1 p{
-    color:white;
-    font-family:"Open Sans";
-    text-align:center;
+
+.summary p {
+    margin: 0 auto;
 }
+
 table{
     width:100%;
     border:1em;
@@ -101,13 +101,18 @@ color:white;
     padding-top:0.5em;
     padding-bottom: 0.5em;
 }
+
 .city{
-    padding-left:2.25em;
     max-width:960px;
     margin:0 auto;
     text-align:center;
-    font-size:20px;
+    font-size:25px;
 }
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .forecast_container{
     flex: 1 1 auto;
     color:white;
@@ -152,13 +157,13 @@ color:white;
 .article_img{
     max-width:100%;
     height:auto;
-}
+}   
 
 h1{
     color:white;
-    font-size:1.6rem;
+    font-size:2rem;
     font-family:"Secular one";
-    margin:0 0 0 17px;
+    margin: 10px;
 }
 
 h2{
@@ -172,9 +177,17 @@ h2{
 .motto{
     font-family:"Open Sans";
     font-style: italic;
-    font-size: 9px;
+    font-size: 0.8rem;
     color:white;
     margin-left:10px;
+}
+
+
+nav{
+    max-width:960px;
+    background-color:#ACDDE7;  
+    margin: auto; 
+    text-align:center;
 }
 nav ul{
     list-style-type:none;
@@ -182,15 +195,19 @@ nav ul{
     margin:0 auto;
     overflow:hidden;
 }
-
-
-nav{
-    max-width:960px;
-    background-color:#80c99b;  
-    margin: auto; 
-    text-align:center;
+nav ul li {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1rem;
+    padding: .8rem 2%;
 }
-
+nav ul li a{
+    color: #004e64;
+    text-decoration: none;
+}
+.active{
+    text-decoration:underline;
+}
 .navigation a{
     display:block;
     padding:1rem;
@@ -198,42 +215,32 @@ nav{
     text-decoration:none;
     font-family:"Open Sans";
     color:black;
-}
-
-.navigation a:hover{
-    color:white;
-    background-color:#004e64;
+    font-weight: 200;
 }
 
 
-.responsive-menu li {display:block;
-    background-color:#80c99b;
-    color:black; 
-    font-size:15px;   
-}
-.responsive-menu {
-    background-color:#004e64;
-    color:white;
+
+
+
+nav button{
+    margin:0.2rem 2%;
+    background-color: transparent;
     border:none;
-    font-weight:600px;
-    font-size:25px;
-    padding:5px;
-    margin-left: 20px;
+    font-size: 1.6rem;
 }
-
 
 .footer_container{
     line-height:1em;
 }
 
 footer{
-    background-color:#80c99b;
+    list-style-type: none;
+    background-color:#ACDDE7;
     display:flex;
     text-align:center;
-    padding:10px;
+    padding: 0 0 0 0;
     justify-content:center;
     flex-flow:column;
-    padding:1.2rem;
     color:black;
 }
 
@@ -251,13 +258,13 @@ footer h3{
     text-align:center;
 }
 .contact_img{
-    max-width:100%;
+    max-width:300px;
     height:auto;
 }
 .footer_bottom{
     background-color:#004e64;
     text-align:center;
     color:white;
-    padding:0.5em 1.5em 1.5em 1.5em;
+    padding:10px;
 }
 #currentday{color:white;}

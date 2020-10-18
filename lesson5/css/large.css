@@ -1,6 +1,6 @@
 @media only screen and (min-width: 70em) {
-    header img {
-		width: 20%;
+	header img {
+		width: 50%;
 	}
 
 	.headings h1 {
@@ -29,3 +29,4 @@
 		display: none;
 	}
 }
+	
