@@ -63,12 +63,21 @@ header, main, footer{
     margin-bottom: 1em;
 }
 .summary {
+    position: absolute;
     background: #E8FFB7;
     border: none;
-    padding: .75rem;
+    padding: 1rem;
     text-align:center;
-
+    max-width: 100%;
+    height: auto;
+    top: 35px;
+    right: 50px;
+    box-shadow: 0 0 30px black;
+    opacity: .8;
+    color:black;
+    font-size:20px;
 }
+
 
 .summary h3 {
     margin: auto;
