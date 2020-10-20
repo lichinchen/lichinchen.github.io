@@ -90,12 +90,12 @@ header, main, footer{
 
 table{
     width:100%;
-    border:1em;
-    padding-bottom:2em;
+    height:100%;
 }
 table tr td {
-    height:2em;
+    height:3em;
     color:white;
+    padding:1rem;
 }
 td{text-align: center;
 background-color:#004e64}
@@ -105,10 +105,11 @@ td:first-child{text-align:center;
 th{text-align:center;
 background-color:#004e64;
 color:white;
+padding:1rem;
 }
 .preston_container{
-    padding-top:0.5em;
-    padding-bottom: 0.5em;
+    padding-top:2rem;
+    padding-bottom: 2rem;
 }
 
 .city{
@@ -125,32 +126,16 @@ main {
 .forecast_container{
     flex: 1 1 auto;
     color:white;
-    background-color:white;
-    border-right:1px solid #004e64;
     max-width:960px;
     margin: 0 auto;
 }
+
 .forecast{
     text-align:center;
+    padding:0.5rem;
 }
-.rain{
-    background-color:#ACDDE7;
-    border:none;
-    max-width:10vw;
-    height:auto;
-}
-.sun{
-    background-color:#ACDDE7;
-    border:none;
-    max-width:10vw;
-    height:auto;
-}
-.cloudy{
-    background-color:#ACDDE7;
-    border:none;
-    max-width:10vw;
-    height:auto;
-}
+
+
 .article_container{
     background-color:#004e64;
     color:white;
@@ -164,8 +149,11 @@ main {
     padding-bottom:1em;
 }
 .article_img{
-    max-width:100%;
-    height:auto;
+    float:right;
+    max-width:50%;
+    height:200px;
+    margin: 0px 5px 10px 10px;
+    border-radius:5px;
 }   
 
 h1{
@@ -238,8 +226,24 @@ nav button{
     font-size: 1.6rem;
 }
 
-.footer_container{
-    line-height:1em;
+.contact_container{
+   display:flex;
+   max-width:100%;
+   height:auto;
+   background-color:#ACDDE7;
+   padding:1.5rem;
+   margin:0px 0px 10px 0px;
+}
+.contact{
+    flex-direction:column;
+}
+.contact2{
+    flex-direction:column;
+    margin: 150px 0px 10px 30px;
+}
+.contact_img{
+    max-width:100%;
+    height:auto;
 }
 
 footer{
