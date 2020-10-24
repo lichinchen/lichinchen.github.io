@@ -1,44 +1,130 @@
-@media only screen and (min-width: 32.5em) {
-    .logo {
-		width: 20%;
-	}
+@media only screen and (min-width: 32.5rem) {
 
-	.headings h1 {
-		font-size: 2rem;
-	}
+    
+    .navigation { 
+        display: flex; 
+    }
 
-	.motto {
-		font-size: 11px;
-		margin-left: 13px;
-	}
-    
-	.navigation {
-		display: flex;
+    .navigation li { 
+        display: block;
+        flex: 1 1 100%; 
+        overflow: hidden;
+        border: none;
+    }
+
+    .navigation li:not(:last-child) { 
+        border-right: 1px solid #ACDDE7;   
+    }
+
+
+    .navigation li a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;        
+    }
+
+    .navigation li:first-child { 
+        display: none;
+    }
+
+    .navigation li a { 
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.8rem 1rem;
+        margin: 0 auto;
     }
     
-	.navigation li {
-		display: block;
-		flex: 1 1 auto;
+
+    header picture img {
+        height: 8rem;
+    }
+
+    .hero-container {
+        position: relative;
+    }
+
+    .weather-summary {
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        background: radial-gradient(#ffffff, #ACDDE7);
+        padding: 1.5rem;
+        box-shadow: 0 0 30px black;
+        opacity: .8;
+    }
+    .forecast_container{
+        display:block;
+        margin:0;
     }
     
-	.navigation a {
-		text-align: center;
+    .forecast{
+        text-align:center;
+        padding:0.5rem;
     }
     
-	.navigation li:first-child {
-		display: none;
-	}
-	.contact_container {
-        display:flex;
-        flex-direction:row-reverse;
-		max-width:960px;
-		margin:0 auto;
+    
+    table{
+        width:100%;
+        height:100%;
     }
-	.contact_img {
-		max-width:40vw;
-		height:auto;
-		margin:auto;
+    
+    table tr td {
+        height:3em;
+        color:white;
+        padding:1rem;
     }
+    
+    td{text-align: center;
+    background-color:#004e64}
+    
+    td:first-child{text-align:center;
+        font-weight:bold;
+    }
+    
+    th{text-align:center;
+    background-color:#004e64;
+    color:white;
+    padding:1rem;
+    }
+    
+    
+    
+
+    article {
+        padding: 20px;
+    }
+    
+    article picture {
+        margin: 10px;
+        width: 40%;
+        float: right;
+        box-shadow: 0 0 30px black;
+    }
+    
+    .contact-map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+
+    .contact-info {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        padding:20px;
+    }
+
+    .map {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .map img {
+        border: 1px solid #004e64;
+        width: 60%;
+        height:auto;
+    }
+
+
+
 }
-
-

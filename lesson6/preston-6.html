@@ -1,65 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-us">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Li Chin Chen WDD230 Assignment</title>
+    <title>Preston-6</title>
     <meta name="description" content="Assignment portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon2.ico">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-  
-</head>
-<body onresize=toggleMenuClosedOnWindowReSize()>
+  </head>
+  <body onresize=toggleMenuReSize()>
     <div>
         <p class="top-text">Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
     </div>
     <header>
-        <picture>
+      <picture>
         <img class="logo" src="images/gardenweather.png" alt="Weather Logo">
-        </picture>
-        <section class="gardenhead">
+      </picture>
+      <section>
         <h1>Gardener Weather Site</h1>
         <p class="motto">Weather got me like we need to plant more trees.</p>
-        </section>
-        
-           
+      </section>
     </header>
-    <nav>
-        
-        <ul class="navigation">
-            <button class="ham" id="hamburger">&#9776;</button>
-           
+    <nav class="nav_menu">
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="preston-5.html"> Preston </a></li>
-            <li><a href="#"> Soda Springs</a></li>
-            <li><a href="#"> Fish Haven</a></li>
-            <li><a href="#"> Storm Center</a></li>
-            <li><a href="#"> Gallery</a></li>
+            <li><a class="active" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <div class="preston_container">
-            <h2 class="city">Preston, Idaho</h2>
+      <h2>Preston Idaho</h2>
+      <div class="hero-container">
+        <picture>
+          <img class="hero-img" src="images/greenfield.jpg" alt="main image">
+        </picture>
+        <div class="weather-summary">
+          <h3>Weather Summary</h3>
+          <p>Current: Sunny</p>          
+          <p>Temperature: 60 &#176;F</p>          
+          <p>Wind: 5 mph</p>          
+          <p>Chance of Rain: 21%</p>          
         </div>
-        <div class="image_container">
-            <img src="images/greenfield.jpg" alt= "main image">
-            <section class="summary">
-                <h3>Weather Summary</h3>
-                    <p>Currently: <span id="current">Sunny</span></p>
-                    <p>High: <span id="high">76 &#176F</span></p>
-                    <p>Wind Chill: <span id="windChill">0 F</span></p>
-                    <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
-                    <p>Humidity: <span id="humidity">69%</span></p>
-                </section>
-            </section>
-        </div>
-        
-        <h2 class="forecast">Five Day Forecast</h2>
-        <div class="forecast_container">
+      </div>
+      
+      <div class="forecast_container">
+      <h2 class="forecast">Five Day Forecast</h2>
         <table>
             <thead>
                 <tr>
@@ -75,73 +68,65 @@
                 <tr>
                     <td>
                         <img class="rain" src="images/rain.png" alt="cry icon">
-                        <br>60  &#176 F
+                        <br>60  &#176; F
                     </td>
                     <td>
                         <img class="sun" src="images/sun.png" alt="happy icon">
-                        <br>65  &#176 F
+                        <br>65  &#176; F
                     </td>
                     <td>
                         <img class="rain" src="images/rain.png" alt="cry icon">
-                        <br>63  &#176 F
+                        <br>63  &#176; F
                     </td>
                     <td>
                         <img class="cloudy" src="images/cloudy.png" alt="smile icon">
-                        <br>51  &#176 F
+                        <br>51  &#176; F
                     </td>
                     <td>
                         <img class="sun" src="images/sun.png" alt="happy icon">
-                        <br>58  &#176 F
+                        <br>58  &#176; F
                     </td>
 
                 </tr>
             </tbody>
         </table>
-        </div>
-
-
-        <div class="article_container">
-            <div class="article1">
-                <section class="article2">
-                    <h3>Author name</h3>
-                    <img class="article_img" src="images/greenwheat.jpg" alt= "wheat image">
-                    <h3 class="article3">Article Title</h3>
-                    <p class="article4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis mollis hendrerit. 
-                        Donec auctor commodo magna, eget varius dui eleifend at. Quisque tellus ex, tempus vel auctor non, 
-                        laoreet sed sem. Duis vel justo placerat, ultricies tellus vitae, aliquet leo. Aenean eu pharetra nisl. 
-                        Aliquam sed tristique lorem, sit amet fringilla ipsum. Proin lacus massa, tempus et porttitor et, vehicula et orci.
-                        Vivamus at bibendum lorem. Mauris rutrum tincidunt turpis vel hendrerit. Nam congue pulvinar libero. 
-                        Nam vitae elit eget lacus lacinia vestibulum et id felis. In ac ligula quis nisi interdum molestie. 
-                        Curabitur aliquet mi eget bibendum placerat. Nunc non tellus non est facilisis laoreet ac vitae sapien. 
-                        Donec lobortis purus massa, vel tempus nisi efficitur at. Phasellus tortor risus, imperdiet ut libero a, 
-                        venenatis pharetra diam. Sed placerat condimentum volutpat. Suspendisse interdum at felis a dapibus. 
-                        Ut vitae fermentum felis, vehicula porta metus. Sed placerat condimentum volutpat. Suspendisse interdum at felis 
-                        a dapibus. Ut vitae fermentum felis, vehicula porta metus.</p>
-                </section>
-            </div>
-        </div>
+      </div>
+      <article>
+        <picture><img src="images/greenwheat.jpg" alt="wheat image" ></picture>
+        <h3>Article Title</h3>
+        <p>Author</p>
+        <div class="article-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis mollis hendrerit. 
+            Donec auctor commodo magna, eget varius dui eleifend at. Quisque tellus ex, tempus vel auctor non, 
+            laoreet sed sem. Duis vel justo placerat, ultricies tellus vitae, aliquet leo. Aenean eu pharetra nisl. 
+            Aliquam sed tristique lorem, sit amet fringilla ipsum. Proin lacus massa, tempus et porttitor et, vehicula et orci.
+            Vivamus at bibendum lorem. Mauris rutrum tincidunt turpis vel hendrerit. Nam congue pulvinar libero. 
+            Nam vitae elit eget lacus lacinia vestibulum et id felis. In ac ligula quis nisi interdum molestie. 
+            Curabitur aliquet mi eget bibendum placerat. Nunc non tellus non est facilisis laoreet ac vitae sapien. 
+            Donec lobortis purus massa, vel tempus nisi efficitur at. Phasellus tortor risus, imperdiet ut libero a, 
+            venenatis pharetra diam. Sed placerat condimentum volutpat. Suspendisse interdum at felis a dapibus. 
+            Ut vitae fermentum felis, vehicula porta metus. Sed placerat condimentum volutpat. Suspendisse interdum at felis 
+            a dapibus. Ut vitae fermentum felis, vehicula porta metus.</div>
+      </article>
     </main>
-        <div class="contact_container">
-                <picture>
-                   <div class="contact_img">
-                   <img src="images/map.png" alt="map image">
-                   </div>
-                </picture>
-                <section class="contact">
-                    <h2>Contact Information</h2>
-                    <p class="contact_address">333 Indigo St. Preston, ID<br>
-                       333preston@email.com<br>
-                       (333) 333-33333</p>
-                </section>     
-        </div>
-        </div>
     <footer>
-        <div class="footer_bar">
-        <p>&copy; Gardener Weather Site | Attributions | Li Chin Chen | <span id="currentday"></span></p>
+      <div class="contact-map">
+        <div class="contact-info">
+          <h4>Contact Information</h4>
+          <p>Li Chin Chen</p>
+          <p>&#9993; 333preston@email.com</p>
+          <p>&#9743; 333-333-3333</p>
+          <p>&#128392; 333 Preston St. Preston, ID</p>
         </div>
+        <div class="map">
+          <img src="images/map.png" alt="map image">
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Gardener Weather Site | Attributions |  Li Chin Chen</p>
+        <p><span class="current-date"></span></p>
+      </div>
     </footer>
     <script src="js/currentday.js"></script>
-    <script src="js/top.js"></script>
-</body>
+    <script src="js/pop.js"></script>
+  </body>
 </html>
-
