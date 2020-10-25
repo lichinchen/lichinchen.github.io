@@ -6,7 +6,6 @@
     <title>Preston-6</title>
     <meta name="description" content="Assignment portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="shortcut icon" href="favicon2.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -39,15 +38,19 @@
     <main>
       <h2>Preston Idaho</h2>
       <div class="hero-container">
-        <picture>
-          <img class="hero-img" src="images/greenfield.jpg" alt="main image">
+        <picture class="photo">
+          <source media="(max-width: 400px)" srcset="images/greenfield400.jpg">
+          <source media="(max-width: 600px)" srcset="images/greenfield600.jpg">
+          <source media="(max-width: 960px)" srcset="images/greenfield960.jpg">
+          <img class="hero-img" src="images/greenfield960.jpg" alt="main image">
         </picture>
         <div class="weather-summary">
           <h3>Weather Summary</h3>
-          <p>Current: Sunny</p>          
-          <p>Temperature: 60 &#176;F</p>          
-          <p>Wind: 5 mph</p>          
-          <p>Chance of Rain: 21%</p>          
+          <p>Current: <span>Sunny</span></p>          
+          <p>Temperature: <span id="currentTemp">35</span> &#8457;</p>    
+          <p>Wind: <span id="windSpeed">5</span> mph</p>          
+          <p>Wind Chill: <span id="windChill">none</span> &#8457;</p>      
+          <p>Chance of Rain: <span>21%</span></p>            
         </div>
       </div>
       
@@ -56,11 +59,11 @@
         <table>
             <thead>
                 <tr>
-                    <th>Mon.</th>
-                    <th>Tue.</th>
-                    <th>Wed.</th>
-                    <th>Thu.</th>
-                    <th>Fri.</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
 
                 </tr>
             </thead>
@@ -95,7 +98,7 @@
         <picture><img src="images/greenwheat.jpg" alt="wheat image" ></picture>
         <h3>Article Title</h3>
         <p>Author</p>
-        <div class="article-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis mollis hendrerit. 
+        <p class="article-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis mollis hendrerit. 
             Donec auctor commodo magna, eget varius dui eleifend at. Quisque tellus ex, tempus vel auctor non, 
             laoreet sed sem. Duis vel justo placerat, ultricies tellus vitae, aliquet leo. Aenean eu pharetra nisl. 
             Aliquam sed tristique lorem, sit amet fringilla ipsum. Proin lacus massa, tempus et porttitor et, vehicula et orci.
@@ -105,7 +108,7 @@
             Donec lobortis purus massa, vel tempus nisi efficitur at. Phasellus tortor risus, imperdiet ut libero a, 
             venenatis pharetra diam. Sed placerat condimentum volutpat. Suspendisse interdum at felis a dapibus. 
             Ut vitae fermentum felis, vehicula porta metus. Sed placerat condimentum volutpat. Suspendisse interdum at felis 
-            a dapibus. Ut vitae fermentum felis, vehicula porta metus.</div>
+            a dapibus. Ut vitae fermentum felis, vehicula porta metus.</p>
       </article>
     </main>
     <footer>
@@ -126,7 +129,12 @@
         <p><span class="current-date"></span></p>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({google: {families: ["Open Sans","Secular one"]}});
+    </script>
     <script src="js/currentday.js"></script>
     <script src="js/pop.js"></script>
+    <script src="js/windchill.js"></script>
   </body>
 </html>

@@ -30,7 +30,6 @@ header {
 	justify-content:center;
     background-color:#004e64;
     color:#ffffff;
-    font-family:"Secular one";
 }
 
 header picture img {
@@ -58,7 +57,7 @@ main {
 
 main h2 {
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 .hero-container {

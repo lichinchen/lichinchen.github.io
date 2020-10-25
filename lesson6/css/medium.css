@@ -1,6 +1,5 @@
 @media only screen and (min-width: 32.5rem) {
-
-    
+   
     .navigation { 
         display: flex; 
     }
@@ -11,11 +10,6 @@
         overflow: hidden;
         border: none;
     }
-
-    .navigation li:not(:last-child) { 
-        border-right: 1px solid #ACDDE7;   
-    }
-
 
     .navigation li a {
         white-space: nowrap;
