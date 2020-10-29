@@ -1,0 +1,27 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+h1 {
+    font-family:"Secular one";
+    padding: 1rem;
+    color:#004e64;
+    text-align: center;}  
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+img[data-src] {
+    filter: blur(0.2em);
+  }
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    border:1px solid #004e64;
+    padding: 2px;
+    justify-content:center;
+  }
+  
