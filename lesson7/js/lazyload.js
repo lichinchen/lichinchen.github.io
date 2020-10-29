@@ -30,4 +30,3 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-
