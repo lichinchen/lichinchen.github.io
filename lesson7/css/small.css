@@ -129,8 +129,8 @@ nav {
 }
 
 .navigation li a.active {
-    background-color:#009237;
-    color:#ffffff;
+    background-color:#E8FFB7;
+    color:black;
 }
 
 .navigation li a:hover {

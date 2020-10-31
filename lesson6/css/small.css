@@ -129,8 +129,8 @@ nav {
 }
 
 .navigation li a.active {
-    background-color:#009237;
-    color:#ffffff;
+    background-color:#E8FFB7;
+    color:black;
 }
 
 .navigation li a:hover {
@@ -154,7 +154,8 @@ article img {
 }
 
 .map img {
-    width: 100%;
+    width: 50%;
+    height:auto;
 }
 
 .contact-map {

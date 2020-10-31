@@ -16,6 +16,7 @@ html a {
     align-content: center;
 }
 
+body{margin:0px;}
 .top-text {
     display:none;
     text-align:center;
@@ -156,7 +157,8 @@ article img {
 }
 
 .map img {
-    width: 100%;
+    width: 50%;
+    height:auto;
 }
 
 .contact-map {
