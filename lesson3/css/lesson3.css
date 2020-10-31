@@ -40,7 +40,6 @@ nav ul li a {display:block;
 color:#e8ffb7;
 text-align:center;
 padding:1em;
-
 font-family: "Open Sans";}
 
 nav a:hover {background-color:#e8ffb7;
@@ -70,11 +69,12 @@ height:25em;}
 
 
 .one{background-color:#E8FFB7;}
-.two{background-color:#009237;}
-.three{background-color:#FFFFFF;}
-.four{background-color:#ACDDE7;}
-.five{background-color:#004E64;
-color:white;}
+.two{background-color:#80c99b;}
+.three{background-color:#009237;}
+.four{background-color:#FFFFFF;}
+.five{background-color:#ACDDE7;}
+.six{background-color:#004E64;}
+
 
 
 @media only screen and (min-width:37.5em){

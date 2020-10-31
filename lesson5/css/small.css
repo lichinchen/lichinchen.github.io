@@ -3,6 +3,8 @@ h1, h2 {
     margin: 0;
     font-family:"Secular one";
 }
+h1{font-size:1.5rem;}
+
 h3, h4 {
     padding: 0;
     margin: 0;
@@ -34,7 +36,7 @@ header {
 
 header picture img {
     width: auto;
-    height: 6rem;
+    height: 4rem;
     display: block;
     margin-left: auto;
     margin-right: auto
@@ -43,6 +45,8 @@ header picture img {
 .motto {
     padding: 0.5rem 0;
     font-family:"Open Sans";
+    margin:0px;
+    font-size:12px;
 }
 
 header h1, header h2  {
@@ -127,7 +131,8 @@ nav {
 }
 
 .navigation li a.active {
-    text-decoration:underline;
+    background-color:#009237;
+    color:#ffffff;
 }
 
 .navigation li a:hover {
@@ -147,9 +152,6 @@ article div, article h3, article p {
 
 article img {
     width: 100%;
-}
-
-article picture {
     margin: 0;
 }
 

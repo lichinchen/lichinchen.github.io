@@ -1,5 +1,7 @@
-@media only screen and (min-width: 32.5rem) {
-   
+@media only screen and (min-width: 39rem) {
+    h1{font-size:2.5rem;}
+    .motto{font-size:20px;}
+    
     .navigation { 
         display: flex; 
     }
@@ -7,13 +9,11 @@
     .navigation li { 
         display: block;
         flex: 1 1 100%; 
-        overflow: hidden;
         border: none;
     }
 
     .navigation li a {
         white-space: nowrap;
-        overflow: hidden;
         text-overflow: ellipsis;        
     }
 
@@ -88,11 +88,12 @@
         padding: 20px;
     }
     
-    article picture {
+    article img {
         margin: 10px;
         width: 40%;
         float: right;
         box-shadow: 0 0 30px black;
+        line-height:0;
     }
     
     .contact-map {
