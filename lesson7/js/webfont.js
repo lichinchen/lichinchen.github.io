@@ -1,1 +1,1 @@
-WebFont.load({google: {families: ['Open Sans', 'Secular one', ]}});
+WebFont.load({google: {families: ['Open Sans', 'Secular One', ]}});
