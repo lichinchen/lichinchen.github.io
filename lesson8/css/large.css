@@ -1,0 +1,11 @@
+@media only screen and (min-width: 50rem) {
+    h1{font-size:2.5rem;}
+    img {
+        height: 100%;
+        }
+    .weather_container{
+        grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+       
+    }
