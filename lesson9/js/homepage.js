@@ -36,7 +36,7 @@ fetch(requestURL)
       currentPopulationLabel.textContent = "Population";
       averageRainfallLabel.textContent = "Rain/yr";
       photo.setAttribute('src', "images/" + specificTowns[i].photo);
-      photo.setAttribute('alt', "winter " + specificTowns[i].name);
+      photo.setAttribute('alt', "The town of " + specificTowns[i].name);
       card.appendChild(photo);
       card.appendChild(name);
       card.appendChild(motto);

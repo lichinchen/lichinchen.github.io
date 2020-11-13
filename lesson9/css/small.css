@@ -349,24 +349,24 @@ form label.top input:required:valid {
     margin: 0 auto;
   }
   
-  .townStats div {
+.townStats div {
     width: 100px;
     text-align: center;
   }
   
-  .townStats dt {
+.townStats dt {
     font-size: 21px;
     font-weight: 550;
     margin-bottom: 0px;
   }
   
-  .townStats dd {
+.townStats dd {
     display: inline;
     margin: 0;
     font-size: 12px;
   }
   
-  .cards section {
+.cards section {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 15% 20% 15%;
@@ -382,7 +382,7 @@ form label.top input:required:valid {
     justify-items: center;
   }
   
-  .cards img {
+.cards img {
     object-fit: cover;
     width: 343px;
     height: 200px;
@@ -390,17 +390,21 @@ form label.top input:required:valid {
     border-radius: 8px 8px 0 0;
   
   }
-  
-  .cards p {
+.cards p {
     text-align: center;
     height: 32px;
   }
   
-  .cards h2 {
+.cards h2 {
     margin: 20px 0 0;
   
   }
-  .homepage{
+.homepage{
       color:#ffffff;
       padding:10px;
   }
+
+.active {
+    background-color:#E8FFB7;
+    color:black;
+}

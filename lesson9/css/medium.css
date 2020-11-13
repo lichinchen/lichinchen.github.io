@@ -1,4 +1,4 @@
-@media only screen and (min-width: 39rem) {
+@media only screen and (min-width: 35rem) {
     h1{font-size:2.5rem;}
     .motto{font-size:20px;}
     
@@ -140,13 +140,13 @@
    
     .cards section {
         display: grid;
-        width: 560px;
+        width: 600px;
         grid-template-columns: 50% 50%;
         grid-template-rows: 1fr 1fr 1fr;
         padding: 0;
       }
     
-      .cards img {
+    .cards img {
         grid-column: 2;
         grid-row: 1/4;
         width: 100%;
@@ -154,33 +154,33 @@
         border-radius: 0 8px 8px 0;
       }
     
-      .townStats {
+    .townStats {
         grid-column: 1;
         grid-row: 3;
         width: 90%;
     
       }
     
-      .cards p {
+    .cards p {
         grid-column: 1;
         grid-row: 2;
         padding: 0 15px 15px;
       }
     
-      .cards h2 {
+    .cards h2 {
         grid-column: 1;
         grid-row: 1;
         margin-top: 20px;
       }
     
-      .cards section:nth-child(even) img {
+    .cards section:nth-child(even) img {
         grid-column: 1;
         border-radius: 8px 0 0 8px;
       }
     
-      .cards section:nth-child(even) h2,
-      .cards section:nth-child(even) p,
-      .cards section:nth-child(even) .townStats {
+    .cards section:nth-child(even) h2,
+    .cards section:nth-child(even) p,
+    .cards section:nth-child(even) .townStats {
         grid-column: 2;
       }
     
