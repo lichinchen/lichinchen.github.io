@@ -1,0 +1,69 @@
+h1 {
+    font-family: "Secular One";
+    text-align: center;
+}
+
+h2 {
+    font-family:"Secular One";
+    text-align: center;   
+}
+
+p {
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 0 30px 0;
+    text-align: center;
+}
+
+.cards section {
+    background-color: #ACDDE7;
+    border: solid 1px #004e64;   
+}
+
+
+
+img {
+    max-width: auto;
+    height:300px;
+    box-shadow: 0px 0px 20px 0;
+    border-style: none;
+}
+
+footer {
+   text-align: center;
+   padding: 15px;
+   font-family: "Open Sans";
+   font-size: 18px;
+}
+
+@media only screen and (min-width: 37.5rem) {
+.cards {
+        grid-template-columns: 1fr 1fr;
+        max-width:600px;
+    }
+}
+
+@media only screen and (min-width: 56rem) {
+    .cards {
+            grid-template-columns: repeat(3, 1fr);
+            max-width:900px;
+            margin:auto;
+        }
+    }
+
+@media only screen and (min-width: 78rem) {
+.cards {
+        grid-template-columns: repeat(4, 1fr);
+        max-width:1300px;
+        margin:auto;
+    }
+}

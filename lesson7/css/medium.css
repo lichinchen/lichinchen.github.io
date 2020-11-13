@@ -1,4 +1,4 @@
-@media only screen and (min-width: 39rem) {
+@media only screen and (min-width: 45rem) {
     h1{font-size:2.5rem;}
     .motto{font-size:20px;}
     
@@ -124,13 +124,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-    .weather_container img{
-        box-shadow: 5px 5px 10px;
-    }
-    
-    .weather_container figure:hover {
-        box-shadow: 5px 5px 20px;
-    }
+
     main figcaption {
         display: block;  
     }
