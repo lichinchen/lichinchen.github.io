@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-</head>
+  </head>
 <body onresize=toggleMenuReSize()>
     <div>
         <p class="top-text">Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
@@ -35,53 +35,42 @@
             <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
-    </ul>
-  </nav>
+    
+  
     <main>
-      
-        <picture>
-          <source
-            srcset="images/gardenerweathersmall.jpg"
-            media="(max-width:450px)"
-          />
-          <source
-            srcset="images/gardenerweathermedium.jpg"
-            media="(max-width:700px)"
-          />
-          <source
-            srcset="images/gardenerweatherlarge.jpg"
-            media="(max-width:960px)"
-          />
-          <img
-            
-            src="images/gardenerweatherlarge.jpg"
-            alt="gardenerweather"
-          />
+      <div class="hero-container">
+        <picture class="photo">
+          <source media="(max-width: 400px)" srcset="images/gardenerweathersmall.jpg">
+          <source media="(max-width: 600px)" srcset="images/gardenerweathermedium.jpg">
+          <source media="(max-width: 960px)" srcset="images/gardenerweatherlarge.jpg">
+          <img class="hero-img" src="images/gardenerweatherlarge.jpg" alt="gardenerweather">
         </picture>
-        <h2>Our Home Towns</h2>
+      </div>
+        <h2>Home Towns</h2>
       <div class="cards"></div>
       <article class="homepage">
         <img src="images/wintersnow.jpg" alt="wintersnow">
         <p class="article-text">
         <h3>Winter Gardening Dos and Don'ts</h3>
         <ul>
-          <br>
-          <h4>Winter garden dos</h4>
-          <br>
+          
+          <li>Winter garden dos</li>
+          
           <li>Continue to plant — as long as the ground is soft enough to dig a hole.</li>
           <li>Add mulch. It will help keep root temperatures stable.</li>
           <li>Add compost. It supplies organic nutrients to the soil (but no more than three inches thick). </li>
           <li>Water. Watering in advance of a predicted freeze helps plants, especially potted plants and annuals, make it through a hard freeze because it allows plants to take up moisture before the ground is frozen and prevents water from reaching the root zone. Be sure to hydrate above-ground shoots as well as the roots.</li>
           <li>Give container plants extra protection. Cover with frost cloth or other heat retentive blankets and move pots and other containers close to the foundation of the house or under eaves.</li>
           <li>Bring in houseplants. Spray both sides of the leaves with an insecticidal soap and water thoroughly with an insecticidal drench that is safe for people and pets to kill hitchhiking critters. Position plants indoors where they will receive indirect, bright light for at least five hours a day. Be sure to keep them away from drafts and heating vents and water sparingly because most houseplants do not actively grow in winter.</li>
-          <br>
-          <h4>Winter garden don'ts </h4>
+          
+          <li>Winter garden don'ts </li>
           
           <li>Fertilize. This is a time for garden plants to go dormant and rest. Forcing them to start new growth before the ground warms in the spring not only interrupts this period when they are rejuvenating but ice storms and temperatures below freezing or even hard frosts will kill tender new growth.</li>
           <li>Skip your regular watering cycle. During dry periods when the ground isn’t frozen or covered with snow, a once-a-week deep watering is beneficial. New plantings especially need to be watered in.</li>
           <li>Worry about bulb foliage. Leaves of daffodils and other spring-flowering bulbs should be just fine during temperature dips.</li>
         </ul>
-    </article>
+      </article>
+    </main>
       <footer>
         <div class="contact-map">
           <div class="contact-info">
@@ -95,14 +84,12 @@
             <img src="images/map.jpg" alt="citymap">
           </div>
         </div>
-    </div>
-    </main>
-    <div class="footer-bar">
+        <div class="footer-bar">
         <a target="_blank" href="home-wireframes.html"><img src="images/wireframe.jpg" alt="wireframe" /></a>
         <p>&copy;<span class="copyright-year"></span> Gardener Weather Site | Attributions |  Li Chin Chen</p>
         <p><span class="current-date"></span></p>
       </div>
-  </footer>
+      </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/homepage.js"></script>
   <script src="js/currentday.js"></script>
