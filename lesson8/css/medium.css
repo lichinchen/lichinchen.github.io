@@ -134,8 +134,8 @@
     main figcaption {
         display: block;  
     }
-    form label.sbs {
-        padding: 0.4rem 0;
-    }
     
+    form {
+        max-width: 400px;
+      }
 }

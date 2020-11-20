@@ -36,13 +36,11 @@
       </ul>
   </nav>
     <main>
-      <div class="storm">
-      <h2>Storm Center</h2>
-     </div>
+      
       <form method="get" action="thanks.html">
         <fieldset>
             <legend>Personal Information</legend>
-            <label class="top">Full Name* <input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
+            <label class="top">Full Name* <input type="text" name="fname" required autofocus pattern="[\sA-Za-z]{5,}"></label>
             <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
             <label class="top">Phone* <input type="tel" name="phone" placeholder="0000000000" required></label>
             <label class="top">Zipcode* <input type="number" name="zipcode" required></label>
@@ -114,7 +112,6 @@
     <script src="js/currentday.js"></script>
     <script src="js/pop.js"></script>
     <script src="js/webfont.js"></script>
-    <script src="js/lazyload.js"></script>
     <script src="js/stormcenter.js"></script>
   </body>
 </html>

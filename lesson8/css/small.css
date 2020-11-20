@@ -180,6 +180,7 @@ footer {
     line-height: 1.1em;
     text-align: center;
     font-family:"Open Sans";
+    
 }
 
 .footer-bar p {
@@ -228,9 +229,12 @@ figcaption {
 
 /*----------- FORM --------------*/
 
-.storm {
-    padding:5px;
-}
+
+form {
+    margin: 0 auto;
+    max-width: 320px;
+    padding:15px;
+  }
 
 form fieldset {
     
@@ -238,22 +242,23 @@ form fieldset {
     border: 1px solid #004e64;
     border-radius: 10px;
     padding: .5rem 2%;
-    background-color:#ffffff;
-   
+    background-color:#ffffff;   
 }
 
 form legend {
     color: #004e64;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: 0 .5rem;   
 }
+
 
 form label.top, form div {
     display: block;
-    padding-top: 1rem;
+    margin-bottom: 20px;
     color: #004e64;
     font-size: 1rem;
 }
+
 
 form label.top input, form label.top select, form label.top textarea {
     -webkit-appearance: none;
@@ -264,10 +269,11 @@ form label.top input, form label.top select, form label.top textarea {
     padding: 0.75rem;
     color: #004e64;
     width: 100%;
-    max-width: 20rem;
     background-color: #ACDDE7;
     box-sizing: border-box;
+    line-height:1.3;
 }
+
 
 form label.severity {
     display: block;
@@ -276,6 +282,7 @@ form label.severity {
     font-size: 1rem;
     max-width: 20rem;
 }
+
 
 .storm-severity-label-text {
     width: 50%;
@@ -318,6 +325,7 @@ form label.sbs {
     color: #004e64;
 }
 
+
 form textarea {
     height: 6rem;
 }
@@ -327,16 +335,25 @@ form input.submitButton {
     background-color: #004e64;
     color: white;
     border-radius: 1rem;
-    padding: 0.75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 100%;
-    max-width: 20rem;
+    padding: .75rem 1.5rem;
+    margin: 0 auto;
+    width: 200px;
+    display:block;
 }
+
 
 form label.top input:required {
     border-left: red solid 6px;
 }
 
+
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+.thankYou {
+    text-align:center;
+    max-width:100%;
+    height:150px;
+    padding:10px;
 }

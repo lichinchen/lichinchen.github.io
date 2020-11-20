@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center Page</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="Assignment portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body onresize=toggleMenuReSize()>
+  <div>
+      <p class="top-text">Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
+  </div>
+  <header>
+    <picture>
+      <img class="logo" src="images/gardenweather.jpg" alt="Weather Logo">
+    </picture>
+    <section>
+      <h1>Gardener Weather Site</h1>
+      <p class="motto">Weather got me like we need to plant more trees.</p>
+    </section>
+  </header>
+  <nav class="nav_menu">
+      <ul class="navigation hidemenu">
+          <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+          <li><a href="../lesson9/index.html">Home</a></li>
+          <li><a href="../lesson6/preston-6.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a class="active" href="#">Storm Center</a></li>
+          <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+      </ul>
+  </nav>
+
+  <main>
+      <div><h2>Storm Center</h2></div>
+        <section class="thankYou">
+        <div class="mark">
+            <img src="images/like.jpg" alt="like">
+        </div>
+        <h3>Thank you!</h3> 
+        <h4>Your storm has been reported!</h4>
+        </section> 
+       
+  </main>
+  <footer>
+    <div class="footer-bar">
+    <p>&copy;<span class="copyright-year"></span> Gardener Weather Site | Attributions |  Li Chin Chen |<span class="current-date"></span></p>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/currentday.js"></script>
+<script src="js/pop.js"></script>
+<script src="js/webfont.js"></script>
+</body>
+</html>
