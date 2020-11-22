@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston-6</title>
+    <title>Preston-10</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <meta name="description" content="Assignment portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-   
+    <meta name="description" content="Preston Weather API">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
    
-
-
   </head>
   <body onresize=toggleMenuReSize()>
     <div>
@@ -32,7 +29,7 @@
         <ul class="navigation hidemenu">
             <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
             <li><a href="../lesson9/index.html">Home</a></li>
-            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li class="active"><a href="preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -48,56 +45,49 @@
           <source media="(max-width: 960px)" srcset="images/gardenerweatherlarge.jpg">
           <img class="hero-img" src="images/gardenerweatherlarge.jpg" alt="main image">
         </picture>
+        
         <div class="weather-summary">
           <h3>Weather Summary</h3>
-          <p>Current: <span>Sunny</span></p>          
-          <p>Temperature: <span id="currentTemp">35</span> &#8457;</p>    
-          <p>Wind: <span id="windSpeed">5</span> mph</p>          
-          <p>Wind Chill: <span id="windChill">none</span> &#8457;</p>      
-          <p>Chance of Rain: <span>21%</span></p>            
-        </div>
+          <p>Currently: <span id="curCon"></span></p>
+          <p>Temperature: <span id="curTemp"></span> &#8457;</p>
+          <p>High: <span id="hiTemp"></span> &#8457;</p>
+          <p>Wind Chill: <span id="windChill"></span> &#8457;</p>
+          <p>Humidity: <span id="humidity"></span> %</p>
+          <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+        </div>   
       </div>
       
-      <div class="forecast_container">
-      <h2 class="forecast">Five Day Forecast</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <img class="rain" src="images/rain.jpg" alt="cry icon">
-                        <br>60  &#176; F
-                    </td>
-                    <td>
-                        <img class="sun" src="images/sun.jpg" alt="happy icon">
-                        <br>65  &#176; F
-                    </td>
-                    <td>
-                        <img class="rain" src="images/rain.jpg" alt="cry icon">
-                        <br>63  &#176; F
-                    </td>
-                    <td>
-                        <img class="cloudy" src="images/cloudy.jpg" alt="smile icon">
-                        <br>51  &#176; F
-                    </td>
-                    <td>
-                        <img class="sun" src="images/sun.jpg" alt="happy icon">
-                        <br>58  &#176; F
-                    </td>
-
-                </tr>
-            </tbody>
-        </table>
-      </div>
+      
+    
+      <h2 class="forTitle">Five Day Forecast</h2>
+     
+      <div id="forContainer">
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="" alt="">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="" alt="">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="" alt="">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="" alt="">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="" alt="">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+      </div> 
       <article>
         <img src="images/wintersnow.jpg" alt="wintersnow">
         <h3>Article Title</h3>
@@ -129,16 +119,21 @@
         </div>
       </div>
       <div class="footer-bar">
-        <p>&copy;<span class="copyright-year"></span> Gardener Weather Site | Attributions |  Li Chin Chen</p>
+        <p>&copy;<span class="copyright-year"></span> Gardener Weather Site |<a href="https://openweathermap.org/"> Attributions</a> | Li Chin Chen</p>
+        <p id="current-date"></p>
         <p><span class="current-date"></span></p>
       </div>
     </footer>
   
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
     <script src="js/currentday.js"></script>
     <script src="js/pop.js"></script>
-    <script src="js/windchill.js"></script>
-    <script src="js/webfont.js"></script>
+    <script src="js/preston-10.js"></script>
+    <script src="js/forecast.js"></script>
+
+
+   
 
 
   </body>

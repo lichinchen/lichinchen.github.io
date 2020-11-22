@@ -35,6 +35,7 @@ header {background:#3b5998;
     
     footer a {
        color: yellow;
+       text-decoration: none;
     }
     
     footer a:hover {

@@ -45,7 +45,11 @@
         padding: 1.5rem;
         box-shadow: 0 0 30px black;
         opacity: .8;
+        border-radius: 10px;
     }
+    
+
+    
     .forecast_container{
         display:block;
         margin:0;
@@ -187,5 +191,9 @@
     .cards section:nth-child(even) .townDatas {
         grid-column: 2;
       }
+    
+
+    
+    
     
     }
