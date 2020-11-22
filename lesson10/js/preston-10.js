@@ -12,11 +12,6 @@ fetch(apiURL)
         document.getElementById('hiTemp').textContent = jsObject.main.temp_max;
         document.getElementById('windSpeed').textContent = jsObject.wind.speed;
         document.getElementById('humidity').textContent = jsObject.main.humidity;
-
-      
-   
-    
-
     
 });
       
