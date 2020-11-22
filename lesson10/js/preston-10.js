@@ -1,6 +1,9 @@
 
-const forecastURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=5539d42cf2d71dde5c4f1a28929669c0&units=imperial';
-fetch(forecastURL)
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=5539d42cf2d71dde5c4f1a28929669c0&units=imperial";
+
+
+
+fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
@@ -22,3 +25,5 @@ fetch(forecastURL)
         document.getElementById("windChill").innerHTML = output;
       }
     
+
+      
