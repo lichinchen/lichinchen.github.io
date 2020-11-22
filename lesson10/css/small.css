@@ -77,7 +77,17 @@ main h2 {
     width: 100%;
 }
 
+.weather-summary {   
+   text-align: center;
+   background-color:#ACDDE7;
+   padding: 10px 0;
+   font-family:"Open Sans";
+   
+}
 
+.forecast_container{
+    display:none;
+}
 
 nav {
     background-color:#ACDDE7; 
@@ -184,7 +194,18 @@ footer {
     text-align: center;
     font-family:"Open Sans"; 
 }
+.footer-bar a {color:white;}
+.weather_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    gap: 10px;
+    padding:15px;
+}
 
+.weather_container img{
+    box-shadow: 5px 5px 10px;
+}
 main figure {
     margin: 0;
 }
@@ -396,6 +417,9 @@ form label.top input:required:valid {
 
 
 
+
+
+
   /*-----------Preston-10-----------------*/
 
 
@@ -455,9 +479,8 @@ form label.top input:required:valid {
 }
 
 .icon {
-    border-radius: 100px;
-    padding: .25rem;
-    max-width: 10vw;
+    padding: 10px;
+    max-width: 15vw;
     height: auto;
     align-items: center;
 }
@@ -465,7 +488,7 @@ form label.top input:required:valid {
 .temp {
     display: block;
     padding: 0 5px 5px;
-    font-size: .9rem;
+    font-size: 1rem;
     text-align: center;
 }
 
