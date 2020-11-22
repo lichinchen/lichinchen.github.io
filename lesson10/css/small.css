@@ -431,8 +431,7 @@ form label.top input:required:valid {
     color:#004e64;
     font-weight: bold;
  }
- .weather-summary h3 {
-	font-weight: bold;
+ .weather-summary h2 {
     padding: 5px;
     text-align: center;
     margin-top: 0;
