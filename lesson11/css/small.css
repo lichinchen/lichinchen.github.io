@@ -132,7 +132,10 @@ nav {
     background-color:#E8FFB7;
     color:black;
 }
-
+.active {
+    background-color:#E8FFB7;
+    color:black;
+}
 .navigation li a:hover {
     background-color: #004e64;
     color:#ffffff;
@@ -195,6 +198,7 @@ footer {
     text-align: center;
     font-family:"Open Sans"; 
 }
+.footer-bar a {color:#ffffff;}
 .weather_container{
     display: grid;
     grid-template-columns: 1fr;
