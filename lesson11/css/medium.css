@@ -45,11 +45,7 @@
         padding: 1.5rem;
         box-shadow: 0 0 30px black;
         opacity: .8;
-        border-radius: 10px;
     }
-    
-
-    
     .forecast_container{
         display:block;
         margin:0;
@@ -138,10 +134,10 @@
     main figcaption {
         display: block;  
     }
-    form label.sbs {
-        padding: 0.4rem 0;
-    }
-   
+    
+    form {
+        max-width: 400px;
+      }
 /*----------- Home Page --------------*/
     .cards section {
         display: grid;
@@ -191,9 +187,5 @@
     .cards section:nth-child(even) .townDatas {
         grid-column: 2;
       }
-    
-
-    
-    
     
     }

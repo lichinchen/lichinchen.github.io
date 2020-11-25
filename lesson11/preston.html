@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="Preston Weather API">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+   
+  </head>
+  <body onresize=toggleMenuReSize()>
+    <div>
+        <p class="top-text">Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
+    </div>
+    <header>
+      <picture>
+        <img class="logo" src="images/gardenweather.jpg" alt="Weather Logo">
+      </picture>
+      <section>
+        <h1>Gardener Weather Site</h1>
+        <p class="motto">Weather got me like we need to plant more trees.</p>
+      </section>
+    </header>
+    <nav class="nav_menu">
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaspring.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      
+      <div class="hero-container">
+        <picture class="photo">
+          <source media="(max-width: 400px)" srcset="images/gardenerweathersmall.jpg">
+          <source media="(max-width: 600px)" srcset="images/gardenerweathermedium.jpg">
+          <source media="(max-width: 960px)" srcset="images/gardenerweatherlarge.jpg">
+          <img class="hero-img" src="images/gardenerweatherlarge.jpg" alt="greenfield">
+        </picture>
+        
+        <div class="weather-summary">
+          <h2>Weather Summary</h2>
+          <p>Currently: <span id="curCon"></span></p>
+          <p>Temperature: <span id="curTemp"></span> &#8457;</p>
+          <p>High: <span id="hiTemp"></span> &#8457;</p>
+          <p>Wind Chill: <span id="windChill"></span> &#8457;</p>
+          <p>Humidity: <span id="humidity"></span> %</p>
+          <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+        </div>   
+      </div>
+      
+      
+    
+      <h2 class="forTitle">Five Day Forecast</h2>
+     
+      <div id="forContainer">
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="images/rain.jpg" alt="weathericon">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="images/sun.jpg" alt="weathericon">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="images/rain.jpg" alt="weathericon">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="images/cloudy.jpg" alt="weathericon">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+          <div class="forecast">
+              <span class="day"></span>
+              <img class="forimg" src="images/sun.jpg" alt="weathericon">
+              <p><span class="forTemp"></span>&#176;F</p>
+          </div>
+      </div> 
+      <article>
+        <img src="images/wintersnow.jpg" alt="wintersnow">
+        <h3>Article Title</h3>
+        <p>Author</p>
+        <p class="article-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis mollis hendrerit. 
+            Donec auctor commodo magna, eget varius dui eleifend at. Quisque tellus ex, tempus vel auctor non, 
+            laoreet sed sem. Duis vel justo placerat, ultricies tellus vitae, aliquet leo. Aenean eu pharetra nisl. 
+            Aliquam sed tristique lorem, sit amet fringilla ipsum. Proin lacus massa, tempus et porttitor et, vehicula et orci.
+            Vivamus at bibendum lorem. Mauris rutrum tincidunt turpis vel hendrerit. Nam congue pulvinar libero. 
+            Nam vitae elit eget lacus lacinia vestibulum et id felis. In ac ligula quis nisi interdum molestie. 
+            Curabitur aliquet mi eget bibendum placerat. Nunc non tellus non est facilisis laoreet ac vitae sapien. 
+            Donec lobortis purus massa, vel tempus nisi efficitur at. Phasellus tortor risus, imperdiet ut libero a, 
+            venenatis pharetra diam. Sed placerat condimentum volutpat. Suspendisse interdum at felis a dapibus. 
+            Ut vitae fermentum felis, vehicula porta metus. Sed placerat condimentum volutpat. Suspendisse interdum at felis 
+            a dapibus. Ut vitae fermentum felis, vehicula porta metus.</p>
+      </article>
+    </main>
+    <footer>
+      <div class="contact-map">
+        <div class="contact-info">
+          <h4>Contact Information</h4>
+          <p>Li Chin Chen</p>
+          <p>&#9993; 333preston@email.com</p>
+          <p>&#9743; 333-333-3333</p>
+          <p>&#128392; 333 Preston St. Preston, ID</p>
+        </div>
+        <div class="map">
+          <img src="images/map.jpg" alt="citymap">
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Gardener Weather Site |<a href="https://openweathermap.org/"> Attributions</a> | Li Chin Chen</p>
+        <p id="current-date"></p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/currentday.js"></script>
+    <script src="js/pop.js"></script>
+    <script src="js/preston-10.js"></script>
+    <script src="js/forecast.js"></script>
+    <script src="js/windchill.js"></script>
+
+
+   
+
+
+  </body>
+</html>

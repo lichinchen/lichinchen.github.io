@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="Assignment portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+   
+
+
+  </head>
+  <body onresize=toggleMenuReSize()>
+    <div>
+        <p class="top-text">Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
+    </div>
+    <header>
+      <picture>
+        <img class="logo" src="images/gardenweather.jpg" alt="Weather Logo">
+      </picture>
+      <section>
+        <h1>Gardener Weather Site</h1>
+        <p class="motto">Weather got me like we need to plant more trees.</p>
+      </section>
+    </header>
+    <nav class="nav_menu">
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaspring.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Weather Gallery</h2>
+        <div class="weather_container">
+           
+            <figure>
+                <img src="images/sunny.jpg" width="300" height="400" data-src="images/sunny.jpg" alt="Sunny">
+                <figcaption>The weather is sunny.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rainning.jpg" width="300" height="400" data-src="images/rainning.jpg" alt="Rainning">
+                <figcaption>The weather is rainning.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/lightningstorm.jpg" width="300" height="400"" data-src="images/lightningstorm.jpg" alt="Lightning">
+                <figcaption>Lightning Strom</figcaption>
+            </figure>
+            <figure>
+                <img src="images/snow.jpg" width="300" height="400" data-src="images/snow.jpg" alt="Snow">
+                <figcaption>The weather is snowing.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tornado-water.jpg" width="300" height="400" data-src="images/tornado-water.jpg" alt="Tornado">
+                <figcaption>It is a huge tornado on the sea.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wind.jpg" width="300" height="400" data-src="images/wind.jpg" alt="Wind">
+                <figcaption>The weather is a crazy wind.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/dryweather.jpg" width="300" height="400" data-src="images/dryweather.jpg" alt="Dry">
+                <figcaption>No rain and the land is too dry.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/heavycloudy.jpg"width="300" height="400" data-src="images/heavycloudy.jpg" alt="Cloudy">
+                <figcaption>Heavy cloudy in the sky.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rainbow.jpg" width="300" height="400" data-src="images/rainbow.jpg" alt="Rainbow">
+                <figcaption>Rainbow after rainning.</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Gardener Weather Site | Attributions |  Li Chin Chen</p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/currentday.js"></script>
+    <script src="js/pop.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/lazyload.js"></script>
+
+
+  </body>
+</html>
