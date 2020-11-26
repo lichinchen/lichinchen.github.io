@@ -51,3 +51,16 @@ function getFullDateProper() {
 document.getElementsByClassName('copyright-year')[0].innerHTML = new Date().getFullYear();
 document.getElementsByClassName('current-date')[0].innerHTML = getFullDateProper();
 
+
+
+
+let date = new Date();
+date.getDay()
+if (date.getDay()==5){
+    document.querySelector(".top-text").style.display="block" 
+}
+
+
+
+
+WebFont.load({google: {families: ['Open Sans', 'Secular One', ]}});

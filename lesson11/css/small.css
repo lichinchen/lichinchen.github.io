@@ -469,7 +469,7 @@ form label.top input:required:valid {
 #forContainer {
     display: flex;
     flex-flow: wrap;
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -482,7 +482,7 @@ form label.top input:required:valid {
     
 }
 
-.day {
+.days {
     display: block;
     color: white;
     background-color: #004e64;
@@ -490,15 +490,15 @@ form label.top input:required:valid {
     padding: 5px;
     font-weight: bold;
 }
-
-.icon {
+/*
+.forimg {
     padding: 10px;
     max-width: 15vw;
     height: auto;
     align-items: center;
 }
 
-.temp {
+.forTemp {
     display: block;
     padding: 0 5px 5px;
     font-size: 1rem;
