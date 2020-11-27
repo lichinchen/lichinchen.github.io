@@ -57,35 +57,38 @@
         </div>   
       </div>
     
-      <h2 class="forTitle">Five Day Forecast</h2>
-     
-      <div id="forContainer">
-          <div class="forecast">
-              <span class="days"></span>
-              <img class="forimg" src="images/rain.jpg" alt="weathericon">
-              <p><span class="forTemp"></span>&#176;F</p>
-          </div>
-          <div class="forecast">
-              <span class="days"></span>
-              <img class="forimg" src="images/sun.jpg" alt="weathericon">
-              <p><span class="forTemp"></span>&#176;F</p>
-          </div>
-          <div class="forecast">
-              <span class="days"></span>
-              <img class="forimg" src="images/rain.jpg" alt="weathericon">
-              <p><span class="forTemp"></span>&#176;F</p>
-          </div>
-          <div class="forecast">
-              <span class="days"></span>
-              <img class="forimg" src="images/cloudy.jpg" alt="weathericon">
-              <p><span class="forTemp"></span>&#176;F</p>
-          </div>
-          <div class="forecast">
-              <span class="days"></span>
-              <img class="forimg" src="images/sun.jpg" alt="weathericon">
-              <p><span class="forTemp"></span>&#176;F</p>
-          </div>
-      </div> 
+      <div class="forecast_container">
+        <h2 class="forecast">Five Day Forecast</h2>
+          <table>
+              <thead>
+                  <tr>
+                    <th id="dayofweek1"></th>
+                    <th id="dayofweek2"></th>
+                    <th id="dayofweek3"></th>
+                    <th id="dayofweek4"></th>
+                    <th id="dayofweek5"></th>
+  
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img id="icon1"></img></td>
+                  <td><img id="icon2"></img></td>
+                  <td><img id="icon3"></img></td>
+                  <td><img id="icon4"></img></td>
+                  <td><img id="icon5"></img></td>
+              </tr>
+              <tr>
+                  <td id="forecast1"></td>
+                  <td id="forecast2"></td>
+                  <td id="forecast3"></td>
+                  <td id="forecast4"></td>
+                  <td id="forecast5"></td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+
       <div class="eventcard"></div>
       <article>
         <img src="images/golf.jpg" alt="golflake">
