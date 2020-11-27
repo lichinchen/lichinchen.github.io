@@ -460,49 +460,13 @@ form label.top input:required:valid {
     display:none;
 }
 
-.forTitle {
-    text-align: center;
-    color:#004e64;
-    padding:20px;
-}
+/*--------------Event----------*/
 
-#forContainer {
-    display: flex;
-    flex-flow: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.forecast {
-    flex: 1 1 auto;
-    color: #004e64;
-    background-color: #ACDDE7;
-    border: 2px solid #ffffff;
-    text-align: center;
-    
-}
-
-.days {
-    display: block;
-    color: white;
-    background-color: #004e64;
-    border-top: 1px solid #ffffff;
-    padding: 5px;
-    font-weight: bold;
-}
-/*
-.forimg {
-    padding: 10px;
-    max-width: 15vw;
-    height: auto;
-    align-items: center;
-}
-
-.forTemp {
-    display: block;
-    padding: 0 5px 5px;
-    font-size: 1rem;
+#events{
     text-align: center;
 }
 
-
+.eventTitle{
+    border-bottom:1px solid #004e64;
+    font-size: 30px;
+}
