@@ -194,7 +194,7 @@ footer {
     text-align: center;
     font-family:"Open Sans"; 
 }
-.footer-bar a {color:white;}
+.footer-bar a {color:#ffffff;}
 .weather_container{
     display: grid;
     grid-template-columns: 1fr;

@@ -1,3 +1,4 @@
+/*
 const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 fetch(requestURL)
    .then(function (response) {
@@ -62,12 +63,11 @@ fetch(requestURL)
       }
 
    });
+*/
+
+  
 
 
-
-
-
-/*
 
    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -98,7 +98,6 @@ fetch(requestURL)
        renderGetCityEvents(activeMenuCity.textContent);
    }
 
-*/
 
 
 
