@@ -99,7 +99,7 @@
         line-height:0;   
     }
     
-    .contact-map {
+    .contact-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 10px;
@@ -108,20 +108,17 @@
     .contact-info {
         grid-column: 1;
         grid-row: 1;
-        text-align: center;
+        text-align: left;
         padding:20px;
     }
 
-    .map {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .map img {
-        border: 1px solid #004e64;
-        width: 60%;
-        height:auto;
-    }
+    
+    .map-responsive{
+        margin-top: 10px;
+        margin-right: 10px;
+        border: 2px solid #004e64;
+        
+    }   
 
     .weather_container {
         grid-template-columns: 1fr 1fr;
@@ -194,6 +191,7 @@
 
 .events {
     max-width: 40%;
+    max-width:100%;
     position: absolute;
     bottom: 25px;
     right: 25px;
