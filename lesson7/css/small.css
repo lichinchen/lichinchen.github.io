@@ -200,11 +200,11 @@ footer {
     justify-items: center;  
     gap: 10px;
     padding:15px;
-    width:100%;
-    height:auto;
 }
 
-
+.weather_container img{
+    box-shadow: 5px 5px 10px;
+}
 main figure {
     margin: 0;
 }
@@ -219,10 +219,9 @@ main img {
     transition: filter 0.5s;
 }
 figcaption {
-    background-color: #004e64;
-    color: white;
+    background: radial-gradient(#ffffff, #ACDDE7); 
+    color:black;
     font-style: italic;
     padding: 10px;
     text-align: center;
-
   }
