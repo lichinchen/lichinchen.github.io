@@ -1,0 +1,190 @@
+header, footer {
+    background-color:#d6d7d5;
+    text-align: center;
+    padding:1em;
+}
+header{
+    font-family:"Ubuntu";
+}
+body{
+    background-color:white;
+    font-size:16px;
+}   
+main{
+    background-color:white;
+    padding:10px;
+}
+main, footer {font-family:"Roboto";}
+     
+footer a {
+    color: #dc5687;
+}
+header, main, footer, nav {
+    max-width: 960px;
+    margin: auto;
+}
+     
+nav{
+    background-color:#82668f;
+    text-align:center;
+}
+
+nav ul{
+    list-style-type:none;
+    margin:0 auto;
+    padding:0px;
+}
+
+nav ul li a {
+    display:block;
+    color:#f1ece4;
+    text-align:center;
+    padding:1em;
+    font-family: "Roboto";
+}
+    
+nav a:hover {
+    background-color:#f1ece4;
+    color:#82668f;}
+/*
+.navigation{
+        list-style:none;
+        padding:0;
+    }
+    
+.navigation li{
+        display:none;
+    }
+.navigation li:first-child {
+        display: block;
+    }
+    
+    
+.navigation a{
+        display:block;
+        padding:0.9rem;
+        text-align:center;
+        text-decoration:none;
+        font-family:"Roboto";
+        color:#ffffff;
+    }
+    
+.navigation a:hover{
+        color:#82668f;
+        background-color:#d6d7d5;
+    } */   
+h2 {
+    color:#82668f;
+    padding:0.5em;
+}
+@media only screen and (min-width:37.5em){
+    nav ul {display:flex;}
+    nav ul li {flex: 1 1 100%}}
+   
+/*--------Site Map-------*/
+.sitemap {
+    display: grid;
+    justify-content: center;
+    gap:5px;
+    grid-template-columns: repeat(8, 10%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas:". . . home home . . ."
+    ". . . top top . . ."
+      "left left med1 med1 med2 med2 right right"
+      "page2 page2 page3 page3 page4 page4 page5 page5";
+  }
+  .sitemap > div {text-align: center;
+  }
+  .sm-home {
+    grid-area: home;
+    background-color:#555555;
+    line-height: 3em;
+    color:#ffffff;
+    
+  }
+  .sm-page2 {
+    grid-area: page2;
+    background-color:#cdc9c3;
+    line-height: 3em;
+    
+  }
+  .sm-page3 {
+    grid-area: page3;
+    background-color:#cdc9c3;
+    line-height: 3em;
+    
+  }
+  .sm-page4 {
+    grid-area: page4;
+    background-color:#cdc9c3;
+    line-height: 3em;
+    
+  }
+  .sm-page5 {
+    grid-area: page5;
+    background-color:#cdc9c3;
+    line-height: 3em;
+    
+  }
+  
+  .top {
+    grid-area: top;
+    
+    background-color:#d9e4dd;
+  }
+  
+  .left {
+    grid-area: left;
+    
+    background-color:#fbf7f0;
+  }
+  
+  .right {
+    grid-area: right;
+    
+    background-color:#fbf7f0;
+  }
+  .med1 {
+    grid-area: med1;
+    
+    background-color:#fbf7f0;
+  }
+  .med2 {
+    grid-area: med2;
+    
+    background-color:#fbf7f0;
+  }
+  /*------color scheme-------*/
+  .colors{width:100%;
+    min-width: 15%;
+    margin: auto;
+    text-align: center;}
+    
+    
+    .colors  th{width:10%;
+    height:25em;}
+    
+    
+    .one{background-color:#82668f;}
+    .two{background-color:#dc5687;}
+    .three{background-color:#433a69;}
+    .four{background-color:#9fdcf9;}
+    .five{background-color:#eff2c0;}
+    .six{background-color:#f1ece4;}
+    .seven{background-color:#d6d7d5;}
+    
+ /*------typography------*/
+ .typography-main {
+    display: inline-block;
+    padding: 20px;
+}
+
+.primary-font  {
+    color: var(--primary-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.secondary-font  {
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+}

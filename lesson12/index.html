@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Home Page</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="The scoots home page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+<body onresize=toggleMenuReSize()>
+    
+    <header>
+      
+        <img class="logo" src="images/scooter.png" alt="Homepage Logo">     
+
+      <section>
+        <h1>Caribbean Scooters Rental Co.</h1>
+        <p class="motto">You are free togo anywhere.</p>
+      </section>
+    </header>
+    <nav class="nav_menu">
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservation</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+    
+  
+    <main>
+      <section>
+        <h2 class="town">Welcome</h2>
+      </section>
+      <div class="hero-container">
+        <picture class="photo">
+          <source media="(max-width: 400px)" srcset="images/gardenerweathersmall.jpg">
+          <source media="(max-width: 600px)" srcset="images/gardenerweathermedium.jpg">
+          <source media="(max-width: 960px)" srcset="images/gardenerweatherlarge.jpg">
+          <img class="hero-img" src="images/gardenerweatherlarge.jpg" alt="gardenerweather">
+        </picture>
+      </div>
+        <h2>Home Towns</h2>
+      <div class="cards"></div>
+      <article class="homepage">
+        <img src="images/wintersnow.jpg" alt="wintersnow">
+        <p class="article-text">
+        <h3>Winter Gardening Dos and Don'ts</h3>
+        <ul>
+          
+          <li>Winter garden dos</li>
+          
+          <li>Continue to plant — as long as the ground is soft enough to dig a hole.</li>
+          <li>Add mulch. It will help keep root temperatures stable.</li>
+          <li>Add compost. It supplies organic nutrients to the soil (but no more than three inches thick). </li>
+          <li>Water. Watering in advance of a predicted freeze helps plants, especially potted plants and annuals, make it through a hard freeze because it allows plants to take up moisture before the ground is frozen and prevents water from reaching the root zone. Be sure to hydrate above-ground shoots as well as the roots.</li>
+          <li>Give container plants extra protection. Cover with frost cloth or other heat retentive blankets and move pots and other containers close to the foundation of the house or under eaves.</li>
+          <li>Bring in houseplants. Spray both sides of the leaves with an insecticidal soap and water thoroughly with an insecticidal drench that is safe for people and pets to kill hitchhiking critters. Position plants indoors where they will receive indirect, bright light for at least five hours a day. Be sure to keep them away from drafts and heating vents and water sparingly because most houseplants do not actively grow in winter.</li>
+          
+          <li>Winter garden don'ts </li>
+          
+          <li>Fertilize. This is a time for garden plants to go dormant and rest. Forcing them to start new growth before the ground warms in the spring not only interrupts this period when they are rejuvenating but ice storms and temperatures below freezing or even hard frosts will kill tender new growth.</li>
+          <li>Skip your regular watering cycle. During dry periods when the ground isn’t frozen or covered with snow, a once-a-week deep watering is beneficial. New plantings especially need to be watered in.</li>
+          <li>Worry about bulb foliage. Leaves of daffodils and other spring-flowering bulbs should be just fine during temperature dips.</li>
+        </ul>
+      </article>
+    </main>
+      <footer>
+        <div class="contact-container">
+          <section class="contact-info">
+            <h4>Contact Information</h4>
+            <p>Li Chin Chen</p>
+            <p>&#9993; g599526@gmail.com</p>
+            <p>&#9743;  425-772-0186</p>
+            <p>&#128392; 333 western Caribbean Sea, Mexico </p>
+            <div class="social-media">
+              <a href="http://www.facebook.com" target="_blank"><img class="social-icons" src="images/facebook.png" alt="Facebook icon"></a>
+              <a href="http://www.instagram.com" target="_blank"><img class="social-icons" src="images/instagram.jpg" alt="Instagram icon"></a>
+              <a href="http://www.twitter.com" target="_blank"><img class="social-icons" src="images/twitter.png" alt="Twitter icon"></a>
+              <a href="http://www.whatsapp.com" target="_blank"><img class="social-icons" src="images/whatsapp.png" alt="WhatsApp icon"></a>
+              <a href="http://www.pinterest.com" target="_blank"><img class="social-icons" src="images/pinterest.png" alt="Pinterest icon"></a>              
+            </div>
+          </section>
+          <div class="map">
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477162.8598707267!2d-111.73498111887461!3d42.13350395839597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1605405945809!5m2!1sen!2sus" width="450" height="275"></iframe>
+          </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+        <a target="_blank" href="home-wireframes.html"><img src="images/wireframe.jpg" alt="wireframe" /></a>
+        <p>&copy;<span class="copyright-year"></span> Gardener Weather Site |<a href="https://openweathermap.org/">Open Weather Map</a> |  Li Chin Chen</p>
+        <p><span class="current-date"></span></p>
+      </div>
+      </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/homepage.js"></script>
+  <script src="js/lesson11.js"></script>
+</body>
+
+</html>
