@@ -398,77 +398,76 @@ form label.top input:required:valid {
 @media only screen and (min-width: 30rem) {
 
 
-.cards section {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 60% 10% 15% 15%;
-    background-color: #ffffff;
-    padding: 20px;
-    width: 360px;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px black;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 0 0 10px;
-    align-items: center;
-    justify-items: center;
-  }
 
-.townDatas {
-    display: flex;
-  
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-.townDatas div {
-    width: 100px;
-    text-align: center;
-    background-color: #004e64;
+.towns section {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 10% 15% 15%;
+        background-color: #ffffff;
+        padding: 20px;
+        width: 360px;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px black;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 0 0 10px;
+        align-items: center;
+        justify-items: center;
+      }
     
-  }
-  
-.townDatas dt {
-    font-size: 20px;
-    margin-bottom: 0px;
-    background-color:#ACDDE7;
-  }
-  
-.townDatas dd {
-    display: inline;
-    margin: 0;
-    font-size: 15px;
-    color:#ffffff;
-    
-  }
-  
- 
-  
-.cards img {
-    object-fit: cover;
-    width: 360px;
-    height: 260px;
-    padding: 0;
-    border-radius: 5px 5px 0 0;
-  
-  }
-  
-.cards p {
-    text-align: center;
-    height: 32px;
-    
-  }
-  
-.cards h2 {
-    margin: 20px 0 0;
-   
-  
-  }
+.info {
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+      }
+      
+.info div {
+        width: 100px;
+        text-align: center;
+        background-color: #004e64;
+        
+      }
+      
+.info dt {
+        font-size: 20px;
+        margin-bottom: 0px;
+        background-color:#ACDDE7;
+      }
+      
+.info dd {
+        display: inline;
+        margin: 0;
+        font-size: 15px;
+        color:#ffffff;
+        
+      }
+      
+     
+      
+.towns img {
+        object-fit: cover;
+        width: 300px;
+        height: 250px;
+        padding: 0;
+        margin-top:20px;
+      
+      }
+      
+.towns p {
+        text-align: center;
+        font-size:25px;
+        
+      }
+      
+.towns h2 {
+        margin: 20px 0 0;
+      }
 .homepage{
-      color:#ffffff;
-      padding:10px;
-  }
-
+          color:#ffffff;
+          padding:10px;
+      }
+    
+.footer-bar a{color:#ffffff;}
 
 
 
