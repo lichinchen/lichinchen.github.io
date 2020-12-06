@@ -9,59 +9,64 @@ img {
 }
 
 /*----------- Home Page --------------*/
-.cards {
+
+.towns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 960px;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
         
-.cards section {
+.towns section {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50% 15% 20% 15%;
+  grid-template-rows: 50% 10% 20% 20%;
   width: 300px;
   padding: 0 0 10px;
   align-items: center;
   justify-items: center;
 }
         
-.cards img {
+.towns img {
   object-fit: cover;
-  width: 300px;
+  width: 280px;
   height: 200px;
   border-radius: 5px 5px 0 0;
   grid-row: 1;
+  margin-top:15px;
         
 }
-        
-.cards section:nth-child(odd) img {
-  grid-column: 1;
+.towns h2 {
+  grid-row: 2;
+  margin-top: 20px;
 }
-        
-.cards section:nth-child(even) img {
-  border-radius: 5px 5px 0 0;
-}
-        
-.cards section:nth-child(even) h2,
-.cards section:nth-child(even) p,
-.cards section:nth-child(even) .townDatas {
-  grid-column: 1;
-        
-}
-.townDatas {
-  grid-row: 4;
-  width: 90%;
-        
-}
-.cards p {
+.towns p {
   grid-row: 3;
   padding: 0 15px 15px;
   font-size:19px;
 }
+.info {
+  grid-row: 4;
+  width: 90%;
         
-.cards h2 {
-  grid-row: 2;
-  margin-top: 20px;
+}        
+
+        
+.towns section:nth-child(odd) img {
+  grid-column: 1;
 }
+        
+.towns section:nth-child(even) img {
+  border-radius: 5px 5px 0 0;
+}
+        
+.towns section:nth-child(even) h2,
+.towns section:nth-child(even) p,
+.towns section:nth-child(even) .info {
+  grid-column: 1;
+        
+}
+
+
+
 }

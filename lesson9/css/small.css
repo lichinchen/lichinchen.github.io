@@ -342,7 +342,8 @@ form label.top input:required:valid {
 }
 
 /*----------- Home Page --------------*/
-.cards section {
+
+.towns section {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 60% 10% 15% 15%;
@@ -352,33 +353,32 @@ form label.top input:required:valid {
     border-radius: 5px;
     box-shadow: 0 5px 15px black;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 0 0 10px;
     align-items: center;
     justify-items: center;
   }
 
-.townDatas {
+.info {
     display: flex;
-  
     width: 300px;
     margin: 0 auto;
   }
   
-.townDatas div {
+.info div {
     width: 100px;
     text-align: center;
     background-color: #004e64;
     
   }
   
-.townDatas dt {
+.info dt {
     font-size: 20px;
     margin-bottom: 0px;
     background-color:#ACDDE7;
   }
   
-.townDatas dd {
+.info dd {
     display: inline;
     margin: 0;
     font-size: 15px;
@@ -388,29 +388,27 @@ form label.top input:required:valid {
   
  
   
-.cards img {
+.towns img {
     object-fit: cover;
-    width: 360px;
-    height: 260px;
+    width: 300px;
+    height: 250px;
     padding: 0;
-    border-radius: 5px 5px 0 0;
+    margin-top:20px;
   
   }
   
-.cards p {
+.towns p {
     text-align: center;
-    height: 32px;
+    font-size:25px;
     
   }
   
-.cards h2 {
+.towns h2 {
     margin: 20px 0 0;
-   
-  
   }
 .homepage{
       color:#ffffff;
       padding:10px;
   }
 
-
+.footer-bar a{color:#ffffff;}
