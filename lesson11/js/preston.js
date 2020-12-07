@@ -49,29 +49,38 @@ document.getElementById("windChill").textContent = windChill(t,s);
 
 
 
-const forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=5539d42cf2d71dde5c4f1a28929669c0&units=imperial";
+const forecastapi = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=5539d42cf2d71dde5c4f1a28929669c0&units=imperial";
+fetch(forecastapi)
+.then((response) => response.json())
+.then((jsObject) => {
+  console.log(jsObject);
 
-    fetch(forecast)
-    .then((response) => response.json())
-    .then((jsObject) => {
-      console.log(jsObject);
+let forecastapi = jsObject.list.filter(data => data.dt_txt.includes('18:00:00'));
+console.log(forecastapi);
 
-        const forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        console.log(forecast);
-        let day = 0;
-        const week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let day = "";
+
+let weekday = new Array(7);
+      weekday[0] = "Sunday";
+      weekday[1] = "Monday";
+      weekday[2] = "Tuesday";
+      weekday[3] = "Wednesday";
+      weekday[4] = "Thursday";
+      weekday[5] = "Friday";
+      weekday[6] = "Saturday";
+
+
+forecastapi.forEach(data => {
+  let d = new Date(data.dt_txt); 
+  let weather = data.weather[0].description;
+  let imageURL = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
          
-        forecast.forEach(x => {
-           const d = new Date(x.dt_txt);
-           const desc = x.weather[0].description;
-           const image = "https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";
-          document.getElementById(`dayofweek${day+1}`).textContent = week[d.getDay()];
-          document.getElementById(`forecast${day+1}`).textContent = x.main.temp.toFixed(0) + `°F`;
-          document.getElementById(`icon${day+ 1}`).setAttribute('src', image);
-          document.getElementById(`icon${day+ 1}`).setAttribute('alt', desc);
-          day++;
-           }) 
-    });
-
+document.getElementById(`weather${day+1}`).textContent = weekday[d.getDay()];
+document.getElementById(`forecast${day+1}`).textContent = data.main.temp.toFixed(0) + `°F`;
+document.getElementById(`icon${day+ 1}`).setAttribute('src', imageURL);
+document.getElementById(`icon${day+ 1}`).setAttribute('alt', weather);
+day++;
+}) 
+});
 
 
