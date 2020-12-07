@@ -343,79 +343,51 @@ form label.top input:required:valid {
 }
 
 /*----------- Home Page --------------*/
-.cards section {
+.towns section {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 60% 10% 15% 15%;
-    background-color: #ffffff;
+    grid-template-rows: 50% 10% 10% 10% 10% 10%;
     padding: 20px;
     width: 360px;
+    height:500px;
     border-radius: 5px;
-    box-shadow: 0 5px 15px black;
+    border-style: solid;
+    box-shadow: 0 0 15px black;
+    border-color:#004e64;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 0 0 10px;
     align-items: center;
     justify-items: center;
+    background: radial-gradient(#ffffff, #ACDDE7);
   }
 
-.townDatas {
-    display: flex;
-  
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-.townDatas div {
-    width: 100px;
-    text-align: center;
-    background-color: #004e64;
-    
-  }
-  
-.townDatas dt {
-    font-size: 20px;
-    margin-bottom: 0px;
-    background-color:#ACDDE7;
-  }
-  
-.townDatas dd {
-    display: inline;
-    margin: 0;
-    font-size: 15px;
-    color:#ffffff;
-    
-  }
-  
- 
-  
-.cards img {
+.towns img {
     object-fit: cover;
-    width: 360px;
-    height: 260px;
+    width: 330px;
+    height: 250px;
     padding: 0;
-    border-radius: 5px 5px 0 0;
+    margin-top:20px;
   
   }
   
-.cards p {
+.towns p {
     text-align: center;
-    height: 32px;
-    
+    font-size:25px;
   }
+.towns p1, p2, p3 {
+    font-size:20px;
+}
   
-.cards h2 {
+.towns h2 {
     margin: 20px 0 0;
-   
-  
   }
 .homepage{
       color:#ffffff;
       padding:10px;
   }
 
-
-
+.footer-bar a{color:#ffffff;}
 
 
 
