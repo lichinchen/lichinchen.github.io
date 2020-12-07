@@ -24,16 +24,17 @@ img {
   height:550px;
   align-items: center;
   justify-items: center;
+  
 }
         
 .towns img {
   object-fit: cover;
   width: 250px;
-  height: 200pxau;
+  height: 200px;
   border-radius: 5px 5px 0 0;
   grid-row: 1/2;
- 
-        
+  width: 100%;       
+  height:100%;
 }
 .towns h2 {
   grid-row: 2/3;
@@ -59,7 +60,7 @@ img {
         
 .towns section:nth-child(odd) img {
   grid-column: 2;
- 
+  
 }
         
 
@@ -72,6 +73,7 @@ img {
   grid-column: 2;
         
 }
+
 
 
 }
