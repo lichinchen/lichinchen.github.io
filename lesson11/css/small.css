@@ -407,7 +407,8 @@ form label.top input:required:valid {
         padding: 20px;
         width: 360px;
         border-radius: 5px;
-        box-shadow: 0 5px 15px black;
+        border-style: solid;
+        border-color:#004e64;
         margin: 0 auto;
         margin-bottom: 20px;
         padding: 0 0 10px;
@@ -468,9 +469,6 @@ form label.top input:required:valid {
       }
     
 .footer-bar a{color:#ffffff;}
-
-
-
  /*-----------Preston-10-----------------*/
 
  .weather-summary {   

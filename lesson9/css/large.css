@@ -22,14 +22,16 @@ img {
   grid-template-columns: 1fr;
   grid-template-rows: 50% 10% 20% 20%;
   width: 300px;
+  height:450px;
   padding: 0 0 10px;
   align-items: center;
   justify-items: center;
+  border-style: solid;
 }
         
 .towns img {
   object-fit: cover;
-  width: 280px;
+  width: 250px;
   height: 200px;
   border-radius: 5px 5px 0 0;
   grid-row: 1;
@@ -53,17 +55,15 @@ img {
 
         
 .towns section:nth-child(odd) img {
-  grid-column: 1;
+  grid-column: 2;
 }
         
-.towns section:nth-child(even) img {
-  border-radius: 5px 5px 0 0;
-}
+
         
 .towns section:nth-child(even) h2,
 .towns section:nth-child(even) p,
 .towns section:nth-child(even) .info {
-  grid-column: 1;
+  grid-column: 2;
         
 }
 
