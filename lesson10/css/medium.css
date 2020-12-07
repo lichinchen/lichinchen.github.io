@@ -187,8 +187,6 @@
 }
     /*----------API-----------*/
 .forecast_container {
-    display: flex;
-    flex-flow: wrap;
     max-width: 960px;
     margin: 0 auto;
     flex-direction: column;
@@ -225,6 +223,7 @@ background-color:#004e64;
 color:white;
 padding:1rem;
 }
+
 
 
 

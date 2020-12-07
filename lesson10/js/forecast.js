@@ -8,7 +8,7 @@ fetch(forecastapi)
 let forecastapi = jsObject.list.filter(data => data.dt_txt.includes('18:00:00'));
 console.log(forecastapi);
 
-let day = "";
+let n = "";
 
 let weekday = new Array(7);
       weekday[0] = "Sunday";
@@ -25,10 +25,10 @@ forecastapi.forEach(data => {
   let weather = data.weather[0].description;
   let imageURL = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
          
-document.getElementById(`weather${day+1}`).textContent = weekday[d.getDay()];
-document.getElementById(`forecast${day+1}`).textContent = data.main.temp.toFixed(0) + `°F`;
-document.getElementById(`icon${day+ 1}`).setAttribute('src', imageURL);
-document.getElementById(`icon${day+ 1}`).setAttribute('alt', weather);
-day++;
+document.getElementById(`weather${n+1}`).textContent = weekday[d.getDay()];
+document.getElementById(`forecast${n+1}`).textContent = data.main.temp.toFixed(0) + `°F`;
+document.getElementById(`icon${n+1}`).setAttribute('src', imageURL);
+document.getElementById(`icon${n+1}`).setAttribute('alt', weather);
+n++;
 }) 
 });
