@@ -143,39 +143,47 @@
 .towns section {
     display: grid;
     width: 700px;
-    height:240px;
+    height:300px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 25% 25% 15% 15% 20%;
     padding: 0;  
   }
 
 .towns img {
     grid-column: 1;
-    grid-row: 1/4;
+    grid-row: 1/6;
     width: 100%;
     height: 100%;
     margin-top:0px;
   }
-
-.info {
+.towns h2 {
     grid-column: 2;
-    grid-row: 3;
-    width: 90%;
-
+    grid-row: 1;
   }
+
 
 .towns p {
     grid-column: 2;
     grid-row: 2;
     padding: 0 10px 10px;
-    font-size:22px;
+    font-size:20px;
   }
+.towns p1 {
+    grid-column:2;
+    grid-row:3;
+    font-size:16px;
+}
+.towns p2 {
+    grid-column:2;
+    grid-row:4;
+    font-size:16px;
+}
+.towns p3 {
+    grid-column:2;
+    grid-row:5;
+    font-size:16px;
+}
 
-.towns h2 {
-    grid-column: 2;
-    grid-row: 1;
-    margin-top: 20px;
-  }
 
 .towns section:nth-child(even) img {
     grid-column: 2;
@@ -184,10 +192,15 @@
 
 .towns section:nth-child(even) h2,
 .towns section:nth-child(even) p,
-.towns section:nth-child(even) .info {
+.towns section:nth-child(even) p1 {
     grid-column: 1;
   }
-
+.towns section:nth-child(even) p2 {
+    grid-column: 1;
+  }
+.towns section:nth-child(even) p3 {
+    grid-column: 1;
+  }
 .events {
     max-width: 40%;
     max-width:100%;

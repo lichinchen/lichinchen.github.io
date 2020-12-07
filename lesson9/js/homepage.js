@@ -19,47 +19,27 @@ fetch(requestURL)
       let photo = document.createElement('img');
       let name = document.createElement('h2');
       let motto = document.createElement('p');
-      let year = document.createElement('div');
-      let population = document.createElement('div');
-      let rainfall = document.createElement('div');
-      let info = document.createElement('dl');
-          info.setAttribute('class', 'info');
-      let yearNum = document.createElement('dt');
-      let popNum = document.createElement('dt');
-      let rainNum = document.createElement('dt');
-      let yearTag = document.createElement('dd');
-      let popTag = document.createElement('dd');
-      let rainTag = document.createElement('dd');
+      let year = document.createElement('p1');
+      let population = document.createElement('p2');
+      let rainfall = document.createElement('p3');
 
       name.textContent = assignTowns[i].name;
       motto.textContent = assignTowns[i].motto;
-      yearNum.textContent = assignTowns[i].yearFounded;
-      popNum.textContent = assignTowns[i].currentPopulation;
-      rainNum.textContent = assignTowns[i].averageRainfall;
+      year.textContent = "Year Founded: " + assignTowns[i].yearFounded;
+      population.textContent = "Population: " + assignTowns[i].currentPopulation;
+      rainfall.textContent = "Annual Rain Fall: " + assignTowns[i].averageRainfall;
 
-      yearTag.textContent = "Year";
-      popTag.textContent = "Population";
-      rainTag.textContent = "Rain";
       photo.setAttribute('src', "images/" + assignTowns[i].photo);
       photo.setAttribute('alt', assignTowns[i].name);
 
       card.appendChild(photo);
       card.appendChild(name);
       card.appendChild(motto);
-      card.appendChild(info);
+      card.appendChild(year);
+      card.appendChild(population);
+      card.appendChild(rainfall);
 
-      info.appendChild(year);
-      info.appendChild(population);
-      info.appendChild(rainfall);
-
-      year.appendChild(yearNum);
-      year.appendChild(yearTag);
-
-      population.appendChild(popNum);
-      population.appendChild(popTag);
       
-      rainfall.appendChild(rainNum);
-      rainfall.appendChild(rainTag);
       
       document.querySelector('div.towns').appendChild(card);
     }

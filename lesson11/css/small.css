@@ -398,77 +398,51 @@ form label.top input:required:valid {
 @media only screen and (min-width: 30rem) {
 
 
-
-.towns section {
+    .towns section {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 60% 10% 15% 15%;
-        background-color: #ffffff;
+        grid-template-rows: 50% 10% 10% 10% 10% 10%;
         padding: 20px;
         width: 360px;
+        height:500px;
         border-radius: 5px;
         border-style: solid;
+        box-shadow: 0 0 15px black;
         border-color:#004e64;
         margin: 0 auto;
         margin-bottom: 20px;
         padding: 0 0 10px;
         align-items: center;
         justify-items: center;
+        background: radial-gradient(#ffffff, #ACDDE7);
       }
     
-.info {
-        display: flex;
-        width: 300px;
-        margin: 0 auto;
-      }
-      
-.info div {
-        width: 100px;
-        text-align: center;
-        background-color: #004e64;
-        
-      }
-      
-.info dt {
-        font-size: 20px;
-        margin-bottom: 0px;
-        background-color:#ACDDE7;
-      }
-      
-.info dd {
-        display: inline;
-        margin: 0;
-        font-size: 15px;
-        color:#ffffff;
-        
-      }
-      
-     
-      
-.towns img {
+    .towns img {
         object-fit: cover;
-        width: 300px;
+        width: 330px;
         height: 250px;
         padding: 0;
         margin-top:20px;
       
       }
       
-.towns p {
+    .towns p {
         text-align: center;
         font-size:25px;
-        
       }
+    .towns p1, p2, p3 {
+        font-size:20px;
+    }
       
-.towns h2 {
+    .towns h2 {
         margin: 20px 0 0;
       }
-.homepage{
+    .homepage{
           color:#ffffff;
           padding:10px;
       }
     
-.footer-bar a{color:#ffffff;}
+    .footer-bar a{color:#ffffff;}
  /*-----------Preston-10-----------------*/
 
  .weather-summary {   

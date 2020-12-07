@@ -20,49 +20,56 @@ img {
 .towns section {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50% 10% 20% 20%;
-  width: 300px;
-  height:450px;
-  padding: 0 0 10px;
+  grid-template-rows: 40% 10% 20% 10% 10% 10%;
+  width: 280px;
+  height:550px;
   align-items: center;
   justify-items: center;
-  border-style: solid;
 }
         
 .towns img {
   object-fit: cover;
   width: 250px;
-  height: 200px;
+  height: 200pxau;
   border-radius: 5px 5px 0 0;
-  grid-row: 1;
-  margin-top:15px;
+  grid-row: 1/2;
+ 
         
 }
 .towns h2 {
-  grid-row: 2;
-  margin-top: 20px;
+  grid-row: 2/3;
 }
 .towns p {
-  grid-row: 3;
-  padding: 0 15px 15px;
-  font-size:19px;
+  grid-row: 3/4;
+  font-size:18px;
 }
-.info {
-  grid-row: 4;
-  width: 90%;
-        
-}        
+.towns p1 {
+  grid-row: 4/5;
+  font-size:16px;
+}
+.towns p2 {
+  grid-row: 5/6;
+  font-size:16px;
 
+}
+.towns p3 {
+  grid-row: 6/7;
+  font-size:16px;
+
+}
         
 .towns section:nth-child(odd) img {
   grid-column: 2;
+ 
 }
         
 
         
 .towns section:nth-child(even) h2,
 .towns section:nth-child(even) p,
-.towns section:nth-child(even) .info {
+.towns section:nth-child(even) p1,
+.towns section:nth-child(even) p2,
+.towns section:nth-child(even) p3 {
   grid-column: 2;
         
 }
