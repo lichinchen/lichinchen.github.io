@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery Page</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="Assignment: The Gallery Page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+   
+
+
+  </head>
+  <body>
+    <div>
+      <p class="onlyFri"><span class="pancake">&#127748;</span> Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
+  </div>
+  <header>
+      <img src="images/fishingweathericon.jpg" alt="Weather Logo">
+      <section class="weatherhead">
+          <h1>Fishing Weather</h1>
+          <p class="motto">Weather Where You Fish.</p>
+      </section>
+     
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston </a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li><a href="fishhaven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a class="active" href="gallery.html">Gallery</a></li>
+  </ul>
+  </nav>
+    <main>
+        <h2>Weather Gallery</h2>
+        <div class="weather_container">
+           
+          <figure>
+              <img src="images/placeholder300x400.jpg" data-src="images/sunny.jpg" alt="Sunny">
+              <figcaption>The weather is sunny.</figcaption>
+          </figure>
+          <figure>
+              <img src="images/placeholder300x400.jpg" data-src="images/raining.jpg" alt="Raining">
+              <figcaption>The weather is raining.</figcaption>
+          </figure>
+          <figure>
+              <img src="images/placeholder300x400.jpg" data-src="images/lightning.jpg" alt="Lightning">
+              <figcaption>Lightning Strom</figcaption>
+          </figure>
+          <figure>
+              <img src="images/placeholder300x400.jpg" data-src="images/snow.jpg" alt="Snow">
+              <figcaption>The weather is snowing.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/placeholder300x400.jpg" data-src="images/tornado.jpg" alt="Tornado">
+              <figcaption>A huge tornado on the land.</figcaption>
+          </figure>
+          <figure>
+              <img src="images/placeholder300x400.jpg" data-src="images/windy.jpg" alt="Wind">
+              <figcaption>The weather is a crazy wind.</figcaption>
+          </figure>
+          <figure>
+              <img src="images/placeholder300x400.jpg" data-src="images/dryweather.jpg" alt="Dry">
+              <figcaption>The land is too dry.</figcaption>
+          </figure>
+          <figure>
+              <img src="images/placeholder300x400.jpg" data-src="images/heavycloudy.jpg" alt="Cloudy">
+              <figcaption>Heavy cloudy in the sky.</figcaption>
+          </figure>
+          <figure>
+              <img src="images/placeholder300x400.jpg" data-src="images/rainbow.jpg" alt="Rainbow">
+              <figcaption>Rainbow after rainning.</figcaption>
+          </figure>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-bar">
+        <p>&copy; <span id="currentYear"></span> Fishing Weather |<a href="https://openweathermap.org/">OpenWeatherMap</a> | <a href="../lesson1/index.html">Li Chin Chen</a> |<span id="currentday"></span></p>
+      </div>
+    </footer>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/lesson11.js"></script>
+    <script src="js/lazyload.js"></script>
+    
+
+  </body>
+</html>

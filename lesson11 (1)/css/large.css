@@ -1,0 +1,128 @@
+@media only screen and (min-width: 60rem) {
+  h1{font-size:3rem;}
+  header img{
+      width:60px;
+      height:60%; 
+      margin-top: 20px;
+  }
+  img {
+      height: auto;
+      }
+  .weather_container{
+      grid-template-columns: repeat(3, 1fr);
+      }
+  .weather_container img{
+      box-shadow: 5px 5px 10px;
+      }
+      
+  .weather_container figure:hover {
+      box-shadow: 5px 5px 20px;
+      }
+     
+
+/*----------- Home Page --------------*/
+
+.towns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 960px;
+  grid-gap: 10px;
+  padding:10px;
+}
+        
+.towns section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 10% 10% 10% 10% 10%;
+  width: 300px;
+  height:600px;
+  align-items: center;
+  justify-items: center;
+}
+        
+.towns img {
+  object-fit: cover;
+  width: 300px;
+  height: 250px;
+  /*border-radius: 5px 5px 0 0;*/
+  grid-row: 1/2;
+  width: 100%;       
+  height:100%;
+}
+.towns p0 {
+  grid-row: 2/3;
+}
+.towns p {
+  grid-row: 3/4;
+  font-size:13px;
+}
+.towns p1 {
+  grid-row: 4/5;
+  font-size:16px;
+}
+.towns p2 {
+  grid-row: 5/6;
+  font-size:16px;
+
+}
+.towns p3 {
+  grid-row: 6/7;
+  font-size:16px;
+
+}
+        
+.towns section:nth-child(odd) img {
+  grid-column: 2;
+  
+}
+        
+
+        
+.towns section:nth-child(even) p0,
+.towns section:nth-child(even) p,
+.towns section:nth-child(even) p1,
+.towns section:nth-child(even) p2,
+.towns section:nth-child(even) p3 {
+  grid-column: 2;
+        
+}
+.tips{
+  position: relative;
+}
+
+.rod{
+  width:100%;
+  height:300px;
+  box-shadow: 5px 5px 10px;
+}
+.whereToGo{
+  position: absolute;
+  top: 130px;
+  right: 50px;
+  background: radial-gradient(#ffffff, #d6e4f0);
+  padding: 15px;
+  box-shadow: 5px 5px 10px #444f5a;
+  opacity: .8;
+  border-radius: 10px 10px 10px 10px;
+  font-size:15px;
+  font-weight:bold;
+}
+
+.contact-container{
+  padding: 10px 20px 0 20px;
+}
+.whereToGo a{
+  color:#0092ca;
+}
+
+.hero-img{
+  box-shadow: 5px 5px 10px #444f5a;
+}
+
+#icon1, #icon2, #icon3, #icon4, #icon5 {
+  width:70%;
+}
+
+
+
+}

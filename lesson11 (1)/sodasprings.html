@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W11 Submission: The Weather Site</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="W11 Submission: The Weather Site">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+<body>
+  <div>
+    <p class="onlyFri"><span class="pancake">&#127748;</span> Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city partk paviilion.</p> 
+  </div>
+  <header>
+    <img src="images/fishingweathericon.jpg" alt="Weather Logo">
+    <section class="weatherhead">
+        <h1>Fishing Weather</h1>
+        <p class="motto">Weather Where You Fish.</p>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston </a></li>
+        <li><a class="active" href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+<main>
+    <div class="town-img">
+        <h2 class="town">Soda Springs</h2>
+    </div>
+    <div class="hero-container">
+      <picture class="photo">
+        <source media="(max-width: 400px)" srcset="images/springs400.jpg">
+        <source media="(max-width: 600px)" srcset="images/springs600.jpg">
+        <source media="(max-width: 960px)" srcset="images/springs960.jpg">
+        <img class="hero-img" src="images/springs960.jpg" alt="springs">
+      </picture>
+        <div class="weather-summary">
+            <h3>&#x1F324; Weather Summary</h3>
+            <p>Currently: <span id="curCon"></span></p>
+            <p>Temperature: <span id="curTemp"></span> &#8457;</p>
+            <p>High: <span id="hiTemp"></span> &#8457;</p>
+            <p>Wind Chill: <span id="windChill"></span> &#8457;</p>
+            <p>Humidity: <span id="humidity"></span> %</p>
+            <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+        </div>
+        <div class="events"></div>
+    </div>
+    <div class="forecast_container">
+        <h3>Five Day Forecast</h3>
+        <div class="forecastbox">
+            <div class="forecast">
+                <div id="day1"></div>
+                <div id="date1">3/8</div>
+                <img id="icon1" src="images/placeholder.png" alt="Weather icon">
+                <div id= "temp1"></div>
+            </div>
+            <div class="forecast">
+                <div id="day2"></div>
+                <div id="date2">3/8</div>
+                <img id="icon2" src="images/placeholder.png" alt="Weather icon">
+                <div id= "temp2"></div>
+            </div>
+            <div class="forecast">
+                <div id="day3"></div>
+                <div id="date3">3/8</div>
+                <img id="icon3" src="images/placeholder.png" alt="Weather icon">
+                <div id= "temp3"></div>
+            </div>
+            <div class="forecast">
+                <div id="day4"></div>
+                <div id="date4">3/8</div>
+                <img id="icon4" src="images/placeholder.png" alt="Weather icon">
+                <div id= "temp4"></div>
+            </div>
+            <div class="forecast">
+                <div id="day5"></div>
+                <div id="date5">3/8</div>
+                <img id="icon5" src="images/placeholder.png" alt="Weather icon">
+                <div id= "temp5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="fishingMap">
+        <h3>Fishing Sports Near Soda Springs ID</h3>
+        <div class="fM1">
+            <img src="images/blackfoot.jpg" alt="fishing spot33">
+            <h4>Blackfoot Reservoir</h4>
+            <ul class="ul1">
+                <li>Address: 2853 Dike Rd, Soda Springs, ID 83276</li>
+                <li>GPS: 42.65843756413689, -111.65395143598312</li> 
+                <li>Telephone: (208) 776-5221</li> 
+                <li>Web:<a href="https://www.blm.gov/visit/blackfoot-reservoir-campground">Blackfoot Reservoir website</a></li> 
+            </ul>
+        </div>
+        <div class="fM2">
+            <img src="images/alexander_reservoir.jpg" alt="fishing spot4">
+            <h4>Alexander Reservoir</h4>
+            <ul class="ul2">
+                <li>2426 US-30 Scenic, Soda Springs, ID 83276</li>
+                <li>GPS:42.832123543788, -111.5999579</li> 
+                <li>Telephone:(208) 478-6340</li> 
+                <li>Web:<a href="https://idfg.idaho.gov/fish/family-fishing/southeast">Family Fishing Waters - Southeast Region</a></li> 
+            </ul>
+        </div>
+    </div>
+</main>
+    <footer>
+      <div class="contact-container">
+          <div class="contact-info">
+              <h4>&#127757; Contact Information</h4>
+              <p>&#128103; Li Chin Chen</p>
+              <p>&#128140; 333preston@email.com</p>
+              <p>&#128222; 333-333-3333</p>
+              <p>&#128235; 333 Preston St. Preston, ID</p>
+              <div class="social-media">
+                  <a href="http://www.facebook.com" target="_blank"><img class="social-icons" src="images/facebook.png" alt="Facebook icon"></a>
+                  <a href="http://www.instagram.com" target="_blank"><img class="social-icons" src="images/instagram.png" alt="Instagram icon"></a>
+                  <a href="http://www.twitter.com" target="_blank"><img class="social-icons" src="images/twitter.png" alt="Twitter icon"></a>
+                  <a href="http://www.whatsapp.com" target="_blank"><img class="social-icons" src="images/whatsapp.png" alt="WhatsApp icon"></a>
+                  <a href="http://www.pinterest.com" target="_blank"><img class="social-icons" src="images/pinterest.png" alt="Pinterest icon"></a>
+              </div>
+          </div>
+          <div class="map">
+              <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d393350.87978849694!2d-111.49976895923368!3d42.47526421822379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1605845127591!5m2!1sen!2sus" width="450" height="275"></iframe>
+              </div>
+          </div>
+      </div>
+      
+      <div class="footer-bar">
+        <p>&copy; <span id="currentYear"></span> Fishing Weather |<a href="https://openweathermap.org/">OpenWeatherMap</a> | <a href="../lesson1/index.html">Li Chin Chen</a> |<span id="currentday"></span></p>
+      </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/lesson11.js"></script>
+  <script src="js/sodasprings.js"></script>
+  <script src="js/event.js"></script> 
+  
+</body>
+
+</html>

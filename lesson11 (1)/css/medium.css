@@ -1,0 +1,221 @@
+@media only screen and (min-width: 47.5rem) {
+    header img{
+        width:50px;
+        height:55%; 
+        margin-top: 10px;
+    }
+    
+    .headings h1 {
+        font-size: 3rem;
+    }
+    h2{
+        font-size:2rem;
+    }    
+    .motto{
+        font-size:18px;
+    }
+    .navigation {
+        display: flex;
+    }
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    
+    .navigation a {
+        text-align: center;
+    }
+    
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    nav ul{
+        font-size:20px;
+    }
+
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .contact-info {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        padding:20px;
+    }
+
+    
+    .map-responsive{
+        margin-top: 40px;
+        margin-right: 30px; 
+    }
+    .footer-bar {
+        font-size:16px;
+    }   
+    .onlyFri{
+        font-size:20px;
+        font-weight: bold;
+    }
+    
+    .weather_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main figcaption {
+        display: block;  
+    }
+
+   
+
+    
+    form {
+        max-width: 400px;
+      }
+
+   
+/*----------- Home Page --------------*/
+
+.towns section {
+    display: grid;
+    width: 700px;
+    height:300px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 15% 15% 20%;
+    padding: 0;  
+  }
+
+.towns img {
+    grid-column: 1;
+    grid-row: 1/6;
+    width: 100%;
+    height: 100%;
+    margin-top:0px;
+  }
+.towns p0 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+
+.towns p {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 0 10px 10px;
+    font-size:15px;
+  }
+.towns p1 {
+    grid-column:2;
+    grid-row:3;
+    font-size:16px;
+}
+.towns p2 {
+    grid-column:2;
+    grid-row:4;
+    font-size:16px;
+}
+.towns p3 {
+    grid-column:2;
+    grid-row:5;
+    font-size:16px;
+}
+
+
+.towns section:nth-child(even) img {
+    grid-column: 2;
+    border-radius: 5px 0 0 5px;
+  }
+
+.towns section:nth-child(even) p0,
+.towns section:nth-child(even) p,
+.towns section:nth-child(even) p1 {
+    grid-column: 1;
+  }
+.towns section:nth-child(even) p2 {
+    grid-column: 1;
+  }
+.towns section:nth-child(even) p3 {
+    grid-column: 1;
+  }
+.tips{
+  padding:30px;
+}
+
+.whereToGo a{
+    color:red;
+}
+
+ /*----------API-----------*/
+.forecast_container {
+    max-width: 960px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.forecast{
+    text-align:center;
+    padding:0.5rem;
+}
+
+#icon1, #icon2, #icon3, #icon4, #icon5 {
+    width:65%;
+  }
+.hero-container {
+    position: relative;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    background: radial-gradient(#d6e4f0, #ffffff, #d6e4f0);
+    border-radius: 10px 10px 10px 10px;
+    padding: 1rem;
+    box-shadow: 10px 20px 30px #444f5a;
+    opacity: .8;
+    color:#444f5a;
+}
+
+.fishingMap h3{
+    font-size:25px;
+}
+.fishingMap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.fM1{
+    grid-column: 1;
+}
+.fM2{
+    grid-column: 2;
+}
+.fishingMap img{
+    width:90%;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.events {
+    max-width: 40%;
+    max-width:100%;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    background: radial-gradient(#ffffff, #444f5a);
+    border: 1px solid #d6e4f0;
+    padding: 1rem;
+    box-shadow: 0 0 30px #444f5a;
+    opacity: .8;  
+    text-align: left;
+
+}
+
+.events ul{
+    list-style-type:square;;
+}
+}
