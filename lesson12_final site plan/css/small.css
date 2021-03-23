@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Suez+One&display=swap');
+body {
+    font-size:18px;
+    background-color:#EBEBEB;
+}
+
+main{
+    background-color:#ffffff;
+    padding:10px;
+    background-color:#EBEBEB;
+}
+
+header{
+    background-color:#000000;
+    color:#ffffff;
+    text-align: center;
+    padding:10px;
+}
+footer{
+    font-size:16px;
+    background-color:#B1B1B1;
+    color:#000000;
+    padding:10px;
+    text-align:center;
+}
+
+
+h1, h2, h3 {
+    font-family:"Suez One";
+}
+
+h1{
+    font-size:1.2em;
+}
+main, footer {
+    font-family:"Lato";
+}
+ 
+footer a {
+    color: #000000;
+    text-decoration: none;
+ }
+
+footer a:hover{
+    font-weight:bold;
+}
+
+header, main, footer, nav {
+    margin: auto;
+}
+main{
+    max-width:960px;
+}
+ 
+nav{
+    background-color:#00A7EA;
+    text-align:center;
+}
+nav ul{
+    list-style-type:none;
+    margin:0 auto;
+    font-size:25px;
+}
+
+nav ul li a {
+    display:block;
+    color:#000000;
+    text-align:center;
+    padding:10px;
+    font-family: "Lato";
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:#A1E0F7;
+    color:#000000;
+    font-weight:bold;
+    border: #ffffff dashed 2px;
+}
+.active {
+    color:#000000;
+    background-color:#FFA015;
+    
+    font-weight:bold;
+}
+img{
+    padding:10px;
+}
+
+h2 {
+    color: #000000;
+    padding:0.5em;
+}
+
+p{
+    font-family:"Lato";
+    padding:10px;
+}
+
+.p1, .p2, .p3{color:#000000;}
+
+li{
+    color:#000000;
+    font-family:"Lato";
+}
+
+.color{
+    margin: auto;
+    text-align: center;
+}
+
+
+.typo{
+     text-align: center;
+ }
+.para{
+    font-size:24px;
+}
+
+main a {
+    text-decoration: none;
+}
+.sitemap1{
+    text-align: center;
+}
+
+.sitemap2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+}
+.home{
+    background-color:#FFD08A;
+    max-width:680px;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    margin-top:15px;
+}
+.city, .join, .directory, .contact{
+    background-color:#A1E0F7;
+    max-width:680px;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    margin-top:15px;
+}
+
